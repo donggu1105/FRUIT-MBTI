@@ -21,3 +21,24 @@ article {
 .share {
     margin: 0 auto;
 }
+
+
+.kakao_ad {
+    width: 320px;
+    /*가운데 배치*/
+    margin: 0 auto;
+
+}
+
+.banner {
+    display: flex;
+    /* 자식들은 가운대로 배치*/
+    justify-content: center;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.banner img {
+    width: 300px;
+}
+
