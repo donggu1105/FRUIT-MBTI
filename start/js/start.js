@@ -1,5 +1,7 @@
 const main = document.querySelector("#main");
 const qna = document.querySelector("#qna");
+const endPoint = 12;
+
 
 function begin() {
     main.style.WebkitAnimation = "fadeOut 1s";
@@ -53,4 +55,7 @@ function goNext(qIdx) {
     for (let i in qnaList[qIdx].a) {
         addAnswer(qnaList[qIdx].a[i].answer, qIdx);
     }
+
+    var status = document.querySelector('.statusBar');
+    status.style.width = (100/endPoint) * (qIdx + 1) + '%';
 }
