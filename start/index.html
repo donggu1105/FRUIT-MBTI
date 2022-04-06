@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/default.css"/>
         <link rel="stylesheet" href="css/main.css"/>
         <link rel="stylesheet" href="css/qna.css"/>
+        <link rel="stylesheet" href="css/result.css"/>
         <link rel="stylesheet" href="css/animation.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +19,7 @@
     <body>
         <div class="container">
 <!--            MAIN      -->
-            <section id="main" class="mx-auto mt-5 py-5 px-3">
+            <section id="main" class="mx-auto my-5 py-5 px-3">
                 <h1 class="pt-5">단톡방에서 나는 어떤 유형일까?</h1>
                 <div class="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
                     <img src="img/main.png" alt="mainImage" class="img-fluid"/>
@@ -40,13 +41,26 @@
 
                 </div>
                 <div class="qBox my-5 py-3 mx-auto">
-
-
                 </div>
                 <div class="answerBox"></div>
             </section>
 <!--            RESULT      -->
-            <section id="result"></section>
+            <section id="result" class="mx-auto my-5 py-5 px-3">
+                <h1 class="pt-5">당신의 결과는?</h1>
+                <div class="resultname">
+
+
+                </div>
+                <div id="resultImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+                </div>
+
+                <div class="resultDesc">
+                </div>
+
+                <button type="button" class="kakao mt-3 py-2 px-3">공유하기</button>
+
+
+            </section>
             <script src="js/data.js" charset="utf-8"></script>
             <script src="js/start.js" charset="utf-8"></script>
         </div>
