@@ -2,3 +2,28 @@
     display: none;
 
 }
+
+
+.qBox {
+    background-color: whitesmoke;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 30px;
+    width: 80%;
+}
+
+
+.answerList {
+    background-color: whitesmoke;
+    border-radius: 20px;
+    display: block;
+    width: 100%;
+    border: 0px;
+    font-size: 25px;
+}
+
+
+.answerList:hover, .answerList:focus {
+    background-color: pink;
+    color: whitesmoke;
+}
