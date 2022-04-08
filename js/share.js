@@ -8,7 +8,7 @@ function setShare() {
     const shareTitle = "단톡방 MBTI 유형"
     const shareDesc = infoList[resultAlt].name;
     const shareImage = url + "img/image-" + resultAlt + ".png";
-    const shareURL = url + "page.result-" + resultAlt + '.html';
+    const shareURL = url + "page/result-" + resultAlt + '.html';
 
     Kakao.Link.sendDefault({
         objectType: 'feed',
