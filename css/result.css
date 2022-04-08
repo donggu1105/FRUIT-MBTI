@@ -38,3 +38,18 @@
     background-color: whitesmoke;
     color: #FEE500;
 }
+
+
+.gohome {
+    color: white;
+    background-color: pink;
+    font-size: 20px;
+    border: 0px;
+    border-radius: 20px;
+}
+
+.kakao:hover, .kakao:focus {
+    background-color: whitesmoke;
+    color: pink;
+}
+
