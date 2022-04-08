@@ -28,11 +28,13 @@ function addAnswer(text, qIdx, idx) {
     var answer = document.createElement("button");
     answer.classList.add('answerList');
     answer.classList.add("my-3");
-    answer.classList.add("py-3")
-    answer.classList.add("mx-auto")
-    answer.classList.add("fadeIn")
+    answer.classList.add("py-3");
+    answer.classList.add("mx-auto");
+    answer.classList.add("fadeIn");
     a.appendChild(answer);
     answer.innerHTML = text;
+
+
 
     answer.addEventListener("click", function(){
         var children = document.querySelectorAll('.answerList');
@@ -56,6 +58,8 @@ function addAnswer(text, qIdx, idx) {
     }, false);
 
 }
+
+
 
 function goResult() {
 

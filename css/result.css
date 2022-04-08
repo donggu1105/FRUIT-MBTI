@@ -4,7 +4,6 @@
     width: 80%;
     text-align: center;
     border-radius: 20px;
-
 }
 
 #shareResult {
@@ -12,6 +11,11 @@
     width: 80%;
     text-align: center;
     border-radius: 20px;
+
+}
+
+#showResultBtn {
+    display: none;
 
 }
 
