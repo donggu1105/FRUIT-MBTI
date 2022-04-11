@@ -1,4 +1,4 @@
-const url = "https://stjustdo.netlify.app/";
+const url = "https://donggu.ml/";
 
 
 function setShare() {
