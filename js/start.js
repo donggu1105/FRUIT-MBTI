@@ -11,8 +11,8 @@ function begin() {
 
     setTimeout(() => {
 
-        qna.style.WebkitAnimation = "fadeIn 1s";
-        qna.style.animation = "fadeIn 1s";
+        qna.style.WebkitAnimation = "fadeIn 0.2s";
+        qna.style.animation = "fadeIn 0.2s";
         setTimeout(() => {
             main.style.display = "none"
             qna.style.display = "block";

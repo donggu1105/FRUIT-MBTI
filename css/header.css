@@ -1,0 +1,9 @@
+header {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-bottom: 1px solid;
+    height: 60px;
+    padding: 0 !important;
+    line-height: unset !important;
+    display: flex;
+    justify-content: center;
+}

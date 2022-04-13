@@ -20,10 +20,10 @@
 
 .fadeIn{
     animation: fadeIn;
-    animation-duration: 0.5s;
+    animation-duration: 0.2s;
 }
 
 .fadeOut{
     animation: fadeOut;
-    animation-duration: 0.5s;
+    animation-duration: 0.2s;
 }
