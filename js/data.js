@@ -1,11 +1,10 @@
 const qnaList = [
   {
-    q: '1. 문제',
+    q: '1. 1년동안 소식이 없던 단톡방에 메시지가 하나 올라 왔을 때 당신의 반응은? ',
     a: [
-      { answer: 'a. 질문', type: ['cow', 'tiger', 'dragon', 'chick'] },
-      { answer: 'b. 질문', type: ['mouse', 'rabbit', 'horse', 'snake', 'dog', 'monkey'] },
-      { answer: 'c. 질문', type: ['sheep', 'pig' ] },
-      { answer: 'd. 질문', type: ['sheep', 'pig' ] }
+      { answer: '(뭐지... 이방 죽은 거 아니였어?) 누가 답장할 때 까지 기다린다.', type: ['INFP', 'ISFP', 'INFJ', 'ISFJ'] },
+      { answer: '뭐야 오랜만이네 하면서 바로 답장을 보낸다. ', type: ['ENFP', 'ESFP', 'ENTP', 'ESTP'] },
+      { answer: '진동벨만 울리는 핸드폰만 확인 후 일단 내 할일 한다. ', type: ['INTJ', 'INFJ', 'ISTJ', 'ISFJ' ] }
     ]
   },
   {
