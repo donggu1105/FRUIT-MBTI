@@ -1,6 +1,6 @@
 const qnaList = [
   {
-    q: '1. 1년동안 소식이 없던 단톡방에 메시지가 하나 올라 왔을 때 당신의 반응은? ',
+    q: '1. 1년동안 소식이 없던 단톡방에 메시지가 하나 올라 왔을 때 나의 반응은? ',
     a: [
       { answer: '(뭐지... 이방 죽은 거 아니였어?) 누가 답장할 때 까지 기다린다.', type: ['INFP', 'ISFP', 'INFJ', 'ISFJ'] },
       { answer: '뭐야 오랜만이네 하면서 바로 답장을 보낸다. ', type: ['ENFP', 'ESFP', 'ENTP', 'ESTP'] },
@@ -8,14 +8,14 @@ const qnaList = [
     ]
   },
   {
-    q: '2. 친구들과 모일 약속 장소를 정하고 있다. 당신의 반응은?',
+    q: '2. 친구들과 모일 약속 장소를 정하고 있다. 나의 반응은?',
     a: [
       { answer: '어디든지 별로 안 중요하니까 가자는 데로 간다. ', type: ['ESTP', 'ISTP', 'ENTP', 'INTP', 'ENFP', 'INfP', 'ESFP', 'ISFP'] },
       { answer: '약속 장소를 여러 개 보내고 일정을 정한다. ', type: ['ESTJ', 'ISTJ', 'ENTJ', 'INTJ', 'ENFJ', 'INfJ', 'ESFJ', 'ISFJ'] },
     ]
   },
   {
-    q: '3. 단톡방에서 엽사 배틀이 붙었다. 당신의 행동은?',
+    q: '3. 단톡방에서 친구들끼리 엽사 배틀이 붙었다. 나의 행동은?',
     a: [
       { answer: 'ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ 웃기만 한다.', type: ['INFP', 'INFJ', 'INTJ'] },
       { answer: '읽어보고 애들 또 이러네 하고 답을 안 한다.', type: ['INTP', 'ISTJ']},
@@ -31,68 +31,74 @@ const qnaList = [
     ]
   },
   {
-    q: '5. 문제',
+    q: '5. 단톡방에서 친구들과 이야기하는 중 한 친구가 은근히 계속 나를 무시하는 말투다. 나의 반응은? ',
     a: [
-      { answer: 'a. 질문 ', type: ['cow', 'sheep', 'dog', 'dragon', 'chick' ] },
-      { answer: 'b. 질문', type: ['mouse', 'rabbit', 'horse', 'pig']},
-      { answer: 'c. 질문', type: ['tiger', 'snake', 'monkey'] },
+      { answer: '개인 톡으로 따로 무시하는 이유를 물어본다.', type: ['ENFJ' ,'ISFJ', 'INFJ' ,'ESTP', 'ENTJ'] },
+      { answer: '(니까짓 게 뭔데 나를 무시해?) 단톡방에서 직접적으로 물어본다.', type: ['ENTP', 'INTP', 'ISTJ', 'ESFJ','ISFP','ESTJ']},
+      { answer: '뭐지? 기분나쁘네... 혼자서 생각한다.', type: ['ENFP', 'INTP', 'ISTP','INFP','INTJ'] },
     ]
   },
 
   {
-    q: '6. 문제',
+    q: '6. 단톡방에 친구가 민감한 사회문제를 공유했다. 뭐라고 반응할까? ',
     a: [
-      { answer: 'a. 질문', type: ['dragon', 'chick', 'pig' ] },
-      { answer: 'b. 질문', type: ['mouse', 'rabbit', 'horse', 'dog' ] },
-      { answer: 'c. 질문', type: ['cow', 'sheep', 'tiger', 'snake', 'monkey' ] },
+      { answer: '친구들 의견에 맞장구만 치고, 솔직한 내 의견은 말하지 않는다.', type: ['ISFJ', 'INFJ', 'INTP', 'ISFP'] },
+      { answer: '(민감한 주제는 ㄴㄴ) 주제를 바꾸거나 단호하게 이야기하지 말자고 한다.', type: ['ENFJ', 'ESFP', 'ENTJ', 'ISTJ'] },
+      { answer: '의견이 있으면 말하고 없으면 조용히 있는다.', type: ['INFP', 'ENFP', 'INTJ', 'ISTP', 'ESFJ'] },
+      { answer: '물만난 고기처럼 대화를 즐긴다.', type: ['ESTP', 'ENTP', 'ESTJ'] }
     ]
   },
   {
-    q: '7. 문제',
+    q: '7. 단톡방에서 한 친구가 나갔을 때 나의 반응은?',
     a: [
-      { answer: 'a. 질문', type: ['cow', 'sheep', 'pig' ] },
-      { answer: 'b. 질문', type: ['tiger', 'dragon', 'chick' ] },
-      { answer: 'c. 질문', type: ['mouse', 'rabbit', 'horse', 'snake', 'dog', 'monkey' ] },
+      { answer: '나간 친구에게 갠톡으로 무슨 일이 있냐고 물어본다. ', type: ['ESFJ', 'ENFJ', 'INTJ', 'ENTJ'] },
+      { answer: '아무 말 안 한다.', type: ['INTP', 'ISTP', 'ISFP', 'ISFJ', 'ISTJ' ] },
+      { answer: '친구가 나갈만한 이유가 있었나 생각해본다.', type: ['INFP', 'ENFP', 'ENTP', 'INTJ', 'INFJ'] },
+      { answer: '바로 다시 초대한다.', type: ['ESTP', 'ESFP', 'ESTJ'] }
     ]
   },
   {
-    q: '8. 문제',
+    q: '8. 단톡방 카톡이 많이 쌓여있는 걸 확인했을 때 내 반응은?',
     a: [
-      { answer: 'a. 질문', type: ['mouse', 'dragon', 'chick' ] },
-      { answer: 'b. 질문', type: ['rabbit', 'tiger', 'horse', 'snake', 'dog', 'monkey' ] },
-      { answer: 'c. 질문', type: ['cow', 'sheep', 'pig' ] },
+      { answer: '내용을 다 확인한다.', type: ['INFJ', 'INTJ', 'ESTJ', 'ENTJ' , 'ISTJ' ] },
+      { answer: '내가 태그 된 것만 본다.', type: ['ESFP', 'ISTJ', 'ENTP'] },
+      { answer: '답장 하기 귀찮으니 일단 미뤄둔다.', type: ['ISTP', 'ISFP', 'ENFP', 'INTP', 'ENFJ' ] },
+      { answer: '이전 메시지는 안 읽고 뒷 북 (맞장구) 친다.', type: ['INFP', 'ESFJ', 'ISFJ'] }
     ]
   },
   {
-    q: '9. 문제',
+    q: '9. 단톡방에서 친구가 재미있는 영상이나 짤방을 공유했을 때 내 반응은?',
     a: [
-      { answer: 'a. 질문', type: ['sheep', 'mouse', 'snake', 'chick' ] },
-      { answer: 'b. 질문', type: ['cow', 'rabbit', 'horse', 'pig' ] },
-      { answer: 'c. 질문', type: ['tiger', 'dog', 'monkey', 'dragon' ] },
+      { answer: '나중에 보고 답하려다가 까먹는다.', type: ['ISFP', 'INTP', 'ISTP' ] },
+      { answer: '다 확인하고 리액션을 해준다.', type: ['ENFP', 'INFP', 'ENFJ', 'ENTJ', 'ESFJ'] },
+      { answer: '나도 웃긴 짤방으로 대답한다.', type:  [ 'ENFP', 'ENTP', 'ESFP', 'ENTJ', 'ESFJ' ] },
+      { answer: '(이건 뭐지?) 그 짤방 뜻인지 물어본다.', type:  [ 'INTJ', 'INFJ', 'INTP' ] }
     ]
   },
   {
-    q: '10. 문제',
+    q: '10. 단톡방에서 친구가 밸런스 게임 문제를 냈을 때 내 반응은? (ex. 똥맛 된장 먹기 vs. 된장같은 똥 먹기)',
     a: [
-      { answer: 'a. 질문', type: ['dragon', 'chick', 'pig'] },
-      { answer: 'b. 질문', type: ['mouse', 'tiger', 'horse', 'snake' ] },
-      { answer: 'c. 질문', type: ['cow', 'sheep', 'rabbit', 'dog', 'monkey' ] },
+      { answer: '말도 안되는 소리하고있네 답할 가치가없다. ', type: ['ISFP', 'ISTP', 'ISFJ', 'ISTJ'] },
+      { answer: '상상을 해보고 떠오르는 대로 답을 해준다. ', type: ['ENFP', 'ENTP', 'ENFJ', 'ENTJ', 'INFP' ] },
+      { answer: '뭐가 더 맛있냐고 물어본다.', type: [ 'INTP', 'INTJ', 'INTJ' ] }
     ]
   },
   {
-    q: '11. 문제',
+    q: '11. 누군가가 뜬금없는 이야기를 해서 갑분싸가 되었다. 내 반응은?',
     a: [
-      { answer: 'a. 질문', type: ['cow', 'dragon', 'chick', 'pig' ] },
-      { answer: 'b. 질문', type: ['sheep', 'mouse', 'rabbit', 'horse', 'dog'] },
-      { answer: 'c. 질문', type: ['tiger', 'snake', 'monkey' ] },
+      { answer: '이유가 무엇이든, 답장을 씹는다.', type: ['ENFP','ENFJ','INFJ','INFP'] },
+      { answer: '민망하지않게 호응해준다.', type: ['sheep', 'mouse', 'rabbit', 'horse', 'dog'] },
+      { answer: '다른이야기로 얼른 화제를 돌린다.', type: ['ENTP','ENTJ','INTP','INTJ'] },
+      { answer: '진심으로 궁금해서 왜 그런 이야기를 하는지 묻는다. ', type: ['ISTJ','ISTP','ESTP','ESTJ'] },
     ]
   },
   {
-    q: '12. 문제',
+    q: '12. 협동 해야하는 조별과제 톡방에서의 행동은?',
     a: [
-      { answer: 'a. 질문', type: ['rabbit', 'horse', 'dragon', 'chick' ] },
-      { answer: 'b. 질문', type: ['mouse', 'tiger', 'snake', 'dog', 'monkey'] },
-      { answer: 'c. 질문', type: ['cow', 'sheep', 'pig'] },
+      { answer: '눈치 챙기기 1등. 눈치 보며 할 일을 충실히 한다.', type: ['INFP', 'ISFJ', 'ENFJ', 'ISFP'] },
+      { answer: '조별과제도 중요하지만, 일단 친목 다져다져~', type: ['ENFP', 'ENTP', 'ESFP', 'ESFJ'] },
+      { answer: '묵언수행이 과제. 일단 각자 할 일에 충실히 하자', type: ['INTJ', 'INFJ', 'ISTP', 'ISTJ'] },
+      { answer: '똑바로 일 안하면 ppt에 너 이름이 없을 거야', type: ['ESTP', 'INTP', 'ENTJ', 'ESTJ'] }
     ]
   }
 ]
