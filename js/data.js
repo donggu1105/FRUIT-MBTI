@@ -8,27 +8,26 @@ const qnaList = [
     ]
   },
   {
-    q: '2. 문제',
+    q: '2. 친구들과 모일 약속 장소를 정하고 있다. 당신의 반응은?',
     a: [
-      { answer: 'a. 질문', type: ['mouse', 'rabbit', 'tiger', 'monkey'] },
-      { answer: 'b. 질문', type: ['cow', 'horse', 'snake', 'dog'] },
-      { answer: 'c. 질문', type: ['sheep', 'dragon', 'chick', 'pig'] },
+      { answer: '어디든지 별로 안 중요하니까 가자는 데로 간다. ', type: ['ESTP', 'ISTP', 'ENTP', 'INTP', 'ENFP', 'INfP', 'ESFP', 'ISFP'] },
+      { answer: '약속 장소를 여러 개 보내고 일정을 정한다. ', type: ['ESTJ', 'ISTJ', 'ENTJ', 'INTJ', 'ENFJ', 'INfJ', 'ESFJ', 'ISFJ'] },
     ]
   },
   {
-    q: '3. 문제',
+    q: '3. 단톡방에서 엽사 배틀이 붙었다. 당신의 행동은?',
     a: [
-      { answer: 'a. 질문', type: ['cow', 'rabbit', 'tiger', 'dog', 'monkey'] },
-      { answer: 'b. 질문', type: ['sheep', 'chick', 'pig'] },
-      { answer: 'c. 질문', type: ['mouse', 'horse', 'snake', 'dragon'] }
+      { answer: 'ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ 웃기만 한다.', type: ['INFP', 'INFJ', 'INTJ'] },
+      { answer: '읽어보고 애들 또 이러네 하고 답을 안 한다.', type: ['INTP', 'ISTJ']},
+      { answer: '질 수 없지. 더 웃긴 엽사를 찍기 위해 카메라를 킨다.', type: ['ENFP', 'ESTP', 'ENTP', 'ENTJ'] }
     ]
   },
   {
-    q: '4. 문제',
+    q: '4. 친한 친구 단톡방에서 OO이 가 오늘 일때문에  힘들어서 퇴사를 한다고 했다.  뭐라고 답장할까?',
     a: [
-      { answer: 'a. 질문', type: ['cow', 'tiger', 'dragon' ] },
-      { answer: 'b. 질문', type: ['sheep', 'dog', 'monkey', 'chick', 'pig' ] },
-      { answer: 'c. 질문', type: ['mouse', 'rabbit', 'horse', 'snake' ] },
+      { answer: '그게 현실이야 임마 ㅋㅋ 술이나 먹자', type: ['ESTJ', 'ENTJ', 'ESFP', 'ISTJ', 'INTP', 'ISTP', 'ENTP'] },
+      { answer: '많이 힘들어? T.T하면서 공감해준다.', type: ['ENFJ', 'ESFJ', 'ISFJ', 'ENFP', 'ISFP', 'INFP']},
+      { answer: '힘이든 구체적인 이유를 물어보고 조언을 말해준다. ', type: ['INTJ', 'INFJ', 'ENFJ'] },
     ]
   },
   {
