@@ -14,12 +14,14 @@
 
 
 .answerList {
-    background-color: whitesmoke;
+    /*background-color: whitesmoke;*/
     border-radius: 20px;
     display: block;
-    width: 100%;
+    width: 80%;
     border: 0px;
     font-size: 25px;
+
+    background-color: #FEE500;
 }
 
 

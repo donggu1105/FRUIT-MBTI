@@ -34,8 +34,7 @@ function addAnswer(text, qIdx, idx) {
     a.appendChild(answer);
     answer.innerHTML = text;
 
-    answer.style.backgroundImage = "url(/img/button.png)"
-
+    // answer.innerHTML = "<img src='/img/answer_box.png'/>"
 
 
     answer.addEventListener("click", function(){

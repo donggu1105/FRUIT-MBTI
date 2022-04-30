@@ -1,5 +1,5 @@
 body {
-    background: pink;
+    background: #869FB5;
 }
 
 * {
@@ -10,3 +10,10 @@ p {
     font-size: 24px;
 }
 
+
+a {
+    font-size: 2em;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
