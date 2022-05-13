@@ -66,9 +66,7 @@ function addAnswer(text, qIdx, idx) {
         setTimeout(() => {
             var target = qnaList[qIdx].a[idx].type;
             for (let i = 0; i < target.length; i++) {
-                console.log(target[i])
                 select[target[i]] += 1;
-                console.log(select)
             }
             for(let i = 0; i < children.length; i++){
                 children[i].style.display = 'none';
@@ -123,32 +121,68 @@ function goNext(qIdx) {
 
 function calResult() {
 
-    var result = select.indexOf(Math.max(...select));
 
-    return result;
+    var keys = Object.keys(select);
+    var mbti = keys[0];
+    var max = select[keys[0]];
+    var i;
+
+    for (i = 1; i < keys.length; i++) {
+        var value = select[keys[i]];
+        if (value > max) {
+            max = value;
+            mbti = keys[i];
+        }
+    }
+    console.log(select)
+    console.log(mbti)
+    return mbti;
 
 }
 
 function setResult() {
-    let point = calResult();
+
+    let mbti = calResult();
     // 이름
     const resultName = document.querySelector(".resultname");
-    resultName.innerHTML = infoList[point].name;
+    resultName.innerHTML = mbtiInfo[mbti]["nickName"];
     // 이미지
     var resultImg = document.createElement('img');
     const imgDiv = document.querySelector('#resultImg');
-    var imgURL = 'img/image-' + point + '.png';
+    var imgURL = 'img/image-' + mbti + '.png';
     resultImg.src = imgURL;
-    resultImg.alt = point;
+    resultImg.alt = mbti;
     resultImg.classList.add('img-fluid');
     imgDiv.appendChild(resultImg);
-
-    // 설명
+    // 한줄 설명
     const resultDesc = document.querySelector('.resultDesc');
-    resultDesc.innerHTML = infoList[point].desc;
+    resultDesc.innerHTML = mbtiInfo[mbti]["desc"];
+
+    // 콘텐트
+    const resultContent = document.querySelector('.resultContent');
+    resultContent.innerHTML = mbtiInfo[mbti]["content"];
 
     // 희귀도
     const resultRareRate = document.querySelector('.resultRareRate');
-    resultRareRate.innerHTML = infoList[point].rareRate;
-    //
+    resultRareRate.innerHTML = mbtiInfo[mbti]["rareRate"];
+
+    // goodSynergyList
+    const resultGoodSynergy = document.querySelector('.resultGoodSynergy')
+    let goodSynergyList = mbtiInfo[mbti]["goodSynergyList"];
+    for (let i = 0; i < goodSynergyList.length; i++) {
+        resultGoodSynergy.innerHTML += goodSynergyList[i] + "<br>"
+    }
+
+    // badSynergyList
+    const resultBadSynergy = document.querySelector('.resultBadSynergy')
+    let badSynergyList = mbtiInfo[mbti]["badSynergyList"];
+    for (let i = 0; i < badSynergyList.length; i++) {
+        resultBadSynergy.innerHTML += badSynergyList[i] + "<br>"
+    }
+
+    // keyWords
+
+
+    mbtiInfo[mbti]["keyWords"];
+
 }
