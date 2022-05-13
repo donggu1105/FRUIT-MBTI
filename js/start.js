@@ -2,7 +2,25 @@ const main = document.querySelector("#main");
 const qna = document.querySelector("#qna");
 const result = document.querySelector("#result")
 const endPoint = 12;
-const select = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+const select = {
+    "ISTJ": 0,
+    "ISTP": 0,
+    "ESTP": 0,
+    "ESTJ": 0,
+    "ISFJ": 0,
+    "ISFP": 0,
+    "ESFP": 0,
+    "ESFJ": 0,
+    "INFJ": 0,
+    "INFP": 0,
+    "ENFP": 0,
+    "ENFJ": 0,
+    "INTJ": 0,
+    "INTP": 0,
+    "ENTP": 0,
+    "ENTJ": 0
+}
+
 
 
 function begin() {
@@ -46,10 +64,11 @@ function addAnswer(text, qIdx, idx) {
             children[i].style.animation = "fadeOut 0.5s";
         }
         setTimeout(() => {
-
             var target = qnaList[qIdx].a[idx].type;
             for (let i = 0; i < target.length; i++) {
+                console.log(target[i])
                 select[target[i]] += 1;
+                console.log(select)
             }
             for(let i = 0; i < children.length; i++){
                 children[i].style.display = 'none';
@@ -112,9 +131,10 @@ function calResult() {
 
 function setResult() {
     let point = calResult();
+    // 이름
     const resultName = document.querySelector(".resultname");
     resultName.innerHTML = infoList[point].name;
-
+    // 이미지
     var resultImg = document.createElement('img');
     const imgDiv = document.querySelector('#resultImg');
     var imgURL = 'img/image-' + point + '.png';
@@ -123,6 +143,12 @@ function setResult() {
     resultImg.classList.add('img-fluid');
     imgDiv.appendChild(resultImg);
 
+    // 설명
     const resultDesc = document.querySelector('.resultDesc');
-    resultDesc.innerHTML = infoList[point].desc
+    resultDesc.innerHTML = infoList[point].desc;
+
+    // 희귀도
+    const resultRareRate = document.querySelector('.resultRareRate');
+    resultRareRate.innerHTML = infoList[point].rareRate;
+    //
 }

@@ -10,8 +10,8 @@ const qnaList = [
   {
     q: '2. 친구들과 모일 약속 장소를 정하고 있다. 나의 반응은?',
     a: [
-      { answer: '어디든지 별로 안 중요하니까 가자는 데로 간다. ', type: ['ESTP', 'ISTP', 'ENTP', 'INTP', 'ENFP', 'INfP', 'ESFP', 'ISFP'] },
-      { answer: '약속 장소를 여러 개 보내고 일정을 정한다. ', type: ['ESTJ', 'ISTJ', 'ENTJ', 'INTJ', 'ENFJ', 'INfJ', 'ESFJ', 'ISFJ'] },
+      { answer: '어디든지 별로 안 중요하니까 가자는 데로 간다. ', type: ['ESTP', 'ISTP', 'ENTP', 'INTP', 'ENFP', 'INfF', 'ESFP', 'ISFP'] },
+      { answer: '약속 장소를 여러 개 보내고 일정을 정한다. ', type: ['ESTJ', 'ISTJ', 'ENTJ', 'INTJ', 'ENFJ', 'INFJ', 'ESFJ', 'ISFJ'] },
     ]
   },
   {
@@ -105,11 +105,12 @@ const qnaList = [
 
 const infoList = [
   {
-    name: '단톡방의 원리원칙 주의자 단톡방의 고지식한 팩폭러 ! <멜론>',
+    mbti : '',
+    name: '단톡방의 원리원칙 주의자, 단톡방의 고지식한 팩폭러 ! <멜론>',
     desc: '설명1 <br> 설명2 <br>',
     goodSynergy : ['ENFP', 'ENTP', 'ISFP', 'INFP'],
     badSynergy : ['ENTJ', 'INFJ', 'ENTJ', 'ESTP'],
-    rare : 25,
+    rareRate : 25,
     keyWords : ['책임감', '원리원칙', '고지식', '팩폭러']
   },
   {
