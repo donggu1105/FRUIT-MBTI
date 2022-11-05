@@ -143,7 +143,6 @@ function calResult() {
 function setResult() {
 
     let mbti = calResult();
-    mbti = "ISTJ";
     // 이름
     const resultName = document.querySelector(".resultname");
     resultName.innerHTML = mbtiInfo[mbti]["nickName"];

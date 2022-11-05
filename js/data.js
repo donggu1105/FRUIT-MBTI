@@ -10,7 +10,7 @@ const qnaList = [
   {
     q: '2. 친구들과 모일 약속 장소를 정하고 있다. 나의 반응은?',
     a: [
-      { answer: '어디든지 별로 안 중요하니까 가자는 데로 간다. ', type: ['ESTP', 'ISTP', 'ENTP', 'INTP', 'ENFP', 'INfF', 'ESFP', 'ISFP'] },
+      { answer: '어디든지 별로 안 중요하니까 가자는 데로 간다. ', type: ['ESTP', 'ISTP', 'ENTP', 'INTP', 'ENFP', 'INFP', 'ESFP', 'ISFP'] },
       { answer: '약속 장소를 여러 개 보내고 일정을 정한다. ', type: ['ESTJ', 'ISTJ', 'ENTJ', 'INTJ', 'ENFJ', 'INFJ', 'ESFJ', 'ISFJ'] },
     ]
   },
@@ -116,7 +116,21 @@ const mbtiInfo = {
       badSynergyList : ['ENTJ', 'INFJ', 'ENTJ', 'ESTP'],
       rareRate : 25,
       keyWords : ['책임감', '원리원칙', '고지식', '팩폭러']
-    }
+    },
+
+  "ISTP": {
+    nickName : '<키위>',
+    desc: '껍질속에 숨기고 있는 다재다능 끼쟁이 키위!',
+    content: ["단톡방 알림은 당연히 꺼야해요. (중요한 공지 관련된건 뺴고) ",
+              "ㅇㅋ, 왜?, 어, ㅋㅋㅋ, 그래, 몰라, ? , ㅇㅇ, 떙큐 등을 자주 써요.",
+              "친한친구라면 딱히 할말없으면 가끔 읽씹 할 때가 있어요.",
+              "입에발린 말은 절대 노노. 쓸데없는 권위의식이나 허례허식은 싫어요.",
+              " 상대방이 카톡을 안읽씹 하는것보단 읽씹이 나아요. 그래도 읽씹은 내 카톡을 확인했다는 뜻이잖아요."],
+    goodSynergyList : ['ENFJ', 'ESFJ', 'INFJ', 'ISFJ'],
+    badSynergyList : ['ENFP', 'INFP', 'ISFP', 'ISTJ'],
+    rareRate : 9,
+    keyWords : ['용건만간단히', '안읽씹보단읽씹']
+  }
   //
   // {
   //   name: '난 너만 봐, 정직한 연애 스타일의 <소>',
