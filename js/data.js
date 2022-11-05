@@ -1,6 +1,6 @@
 const qnaList = [
   {
-    q: '1. 1년동안 소식이 없던 단톡방에 메시지가 하나 올라 왔을 때 나의 반응은? ',
+    q: '1년동안 소식이 없던 단톡방에 메시지가 하나 올라 왔을 때 나의 반응은? ',
     a: [
       { answer: '(뭐지... 이방 죽은 거 아니였어?) 누가 답장할 때 까지 기다린다.', type: ['INFP', 'ISFP', 'INFJ', 'ISFJ'] },
       { answer: '뭐야 오랜만이네 하면서 바로 답장을 보낸다. ', type: ['ENFP', 'ESFP', 'ENTP', 'ESTP'] },
@@ -8,14 +8,14 @@ const qnaList = [
     ]
   },
   {
-    q: '2. 친구들과 모일 약속 장소를 정하고 있다. 나의 반응은?',
+    q: '친구들과 모일 약속 장소를 정하고 있다. 나의 반응은?',
     a: [
       { answer: '어디든지 별로 안 중요하니까 가자는 데로 간다. ', type: ['ESTP', 'ISTP', 'ENTP', 'INTP', 'ENFP', 'INFP', 'ESFP', 'ISFP'] },
       { answer: '약속 장소를 여러 개 보내고 일정을 정한다. ', type: ['ESTJ', 'ISTJ', 'ENTJ', 'INTJ', 'ENFJ', 'INFJ', 'ESFJ', 'ISFJ'] },
     ]
   },
   {
-    q: '3. 단톡방에서 친구들끼리 엽사 배틀이 붙었다. 나의 행동은?',
+    q: '단톡방에서 친구들끼리 엽사 배틀이 붙었다. 나의 행동은?',
     a: [
       { answer: 'ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ 웃기만 한다.', type: ['INFP', 'INFJ', 'INTJ'] },
       { answer: '읽어보고 애들 또 이러네 하고 답을 안 한다.', type: ['INTP', 'ISTJ']},
@@ -23,7 +23,7 @@ const qnaList = [
     ]
   },
   {
-    q: '4. 친한 친구 단톡방에서 OO이 가 오늘 일때문에  힘들어서 퇴사를 한다고 했다.  뭐라고 답장할까?',
+    q: '친한 친구 단톡방에서 OO이 가 오늘 일때문에  힘들어서 퇴사를 한다고 했다.  뭐라고 답장할까?',
     a: [
       { answer: '그게 현실이야 임마 ㅋㅋ 술이나 먹자', type: ['ESTJ', 'ENTJ', 'ESFP', 'ISTJ', 'INTP', 'ISTP', 'ENTP'] },
       { answer: '많이 힘들어? T.T하면서 공감해준다.', type: ['ENFJ', 'ESFJ', 'ISFJ', 'ENFP', 'ISFP', 'INFP']},
@@ -31,7 +31,7 @@ const qnaList = [
     ]
   },
   {
-    q: '5. 단톡방에서 친구들과 이야기하는 중 한 친구가 은근히 계속 나를 무시하는 말투다. 나의 반응은? ',
+    q: '단톡방에서 친구들과 이야기하는 중 한 친구가 은근히 계속 나를 무시하는 말투다. 나의 반응은? ',
     a: [
       { answer: '개인 톡으로 따로 무시하는 이유를 물어본다.', type: ['ENFJ' ,'ISFJ', 'INFJ' ,'ESTP', 'ENTJ'] },
       { answer: '(니까짓 게 뭔데 나를 무시해?) 단톡방에서 직접적으로 물어본다.', type: ['ENTP', 'INTP', 'ISTJ', 'ESFJ','ISFP','ESTJ']},
@@ -40,7 +40,7 @@ const qnaList = [
   },
 
   {
-    q: '6. 단톡방에 친구가 민감한 사회문제를 공유했다. 뭐라고 반응할까? ',
+    q: '단톡방에 친구가 민감한 사회문제를 공유했다. 뭐라고 반응할까? ',
     a: [
       { answer: '친구들 의견에 맞장구만 치고, 솔직한 내 의견은 말하지 않는다.', type: ['ISFJ', 'INFJ', 'INTP', 'ISFP'] },
       { answer: '(민감한 주제는 ㄴㄴ) 주제를 바꾸거나 단호하게 이야기하지 말자고 한다.', type: ['ENFJ', 'ESFP', 'ENTJ', 'ISTJ'] },
@@ -49,7 +49,7 @@ const qnaList = [
     ]
   },
   {
-    q: '7. 단톡방에서 한 친구가 나갔을 때 나의 반응은?',
+    q: '단톡방에서 한 친구가 나갔을 때 나의 반응은?',
     a: [
       { answer: '나간 친구에게 갠톡으로 무슨 일이 있냐고 물어본다. ', type: ['ESFJ', 'ENFJ', 'INTJ', 'ENTJ'] },
       { answer: '아무 말 안 한다.', type: ['INTP', 'ISTP', 'ISFP', 'ISFJ', 'ISTJ' ] },
@@ -58,7 +58,7 @@ const qnaList = [
     ]
   },
   {
-    q: '8. 단톡방 카톡이 많이 쌓여있는 걸 확인했을 때 내 반응은?',
+    q: '단톡방 카톡이 많이 쌓여있는 걸 확인했을 때 내 반응은?',
     a: [
       { answer: '내용을 다 확인한다.', type: ['INFJ', 'INTJ', 'ESTJ', 'ENTJ' , 'ISTJ' ] },
       { answer: '내가 태그 된 것만 본다.', type: ['ESFP', 'ISTJ', 'ENTP'] },
@@ -67,7 +67,7 @@ const qnaList = [
     ]
   },
   {
-    q: '9. 단톡방에서 친구가 재미있는 영상이나 짤방을 공유했을 때 내 반응은?',
+    q: '단톡방에서 친구가 재미있는 영상이나 짤방을 공유했을 때 내 반응은?',
     a: [
       { answer: '나중에 보고 답하려다가 까먹는다.', type: ['ISFP', 'INTP', 'ISTP' ] },
       { answer: '다 확인하고 리액션을 해준다.', type: ['ENFP', 'INFP', 'ENFJ', 'ENTJ', 'ESFJ'] },
@@ -76,7 +76,7 @@ const qnaList = [
     ]
   },
   {
-    q: '10. 단톡방에서 친구가 밸런스 게임 문제를 냈을 때 내 반응은? (ex. 똥맛 된장 먹기 vs. 된장같은 똥 먹기)',
+    q: '단톡방에서 친구가 밸런스 게임 문제를 냈을 때 내 반응은? (ex. 똥맛 된장 먹기 vs. 된장같은 똥 먹기)',
     a: [
       { answer: '말도 안되는 소리하고있네 답할 가치가없다. ', type: ['ISFP', 'ISTP', 'ISFJ', 'ISTJ'] },
       { answer: '상상을 해보고 떠오르는 대로 답을 해준다. ', type: ['ENFP', 'ENTP', 'ENFJ', 'ENTJ', 'INFP' ] },
@@ -84,7 +84,7 @@ const qnaList = [
     ]
   },
   {
-    q: '11. 누군가가 뜬금없는 이야기를 해서 갑분싸가 되었다. 내 반응은?',
+    q: '누군가가 뜬금없는 이야기를 해서 갑분싸가 되었다. 내 반응은?',
     a: [
       { answer: '이유가 무엇이든, 답장을 씹는다.', type: ['ENFP','ENFJ','INFJ','INFP'] },
       { answer: '민망하지않게 호응해준다.', type: ['ESFP', 'ESFJ', 'ISFP', 'ISFJ'] },
@@ -93,7 +93,7 @@ const qnaList = [
     ]
   },
   {
-    q: '12. 협동 해야하는 조별과제 톡방에서의 행동은?',
+    q: '협동 해야하는 조별과제 톡방에서의 행동은?',
     a: [
       { answer: '눈치 챙기기 1등. 눈치 보며 할 일을 충실히 한다.', type: ['INFP', 'ISFJ', 'ENFJ', 'ISFP'] },
       { answer: '조별과제도 중요하지만, 일단 친목 다져다져~', type: ['ENFP', 'ENTP', 'ESFP', 'ESFJ'] },
@@ -158,7 +158,7 @@ const mbtiInfo = {
     goodSynergyList : ['INFP', 'ISFP', 'INTP', 'ENTP'],
     badSynergyList : ['INFJ', 'ENFJ', 'ESTP', 'ENTJ'],
     rareRate : 15,
-    keyWords : ['헌신적', '젊은꼰대', '자기관리', '솔루션충', '엄격한 관리자']
+    keyWords : ['헌신적', '젊은꼰대', '자기관리', '솔루션충', '엄격한관리자']
   },
 
   "ISFJ": {
@@ -172,7 +172,7 @@ const mbtiInfo = {
     goodSynergyList : ['ENTP', 'ENFP', 'INTP', 'ISTP'],
     badSynergyList : ['ENTJ', 'INTJ', 'ISFP', 'INFJ'],
     rareRate : 8,
-    keyWords : ['헌신적', '젊은꼰대', '자기관리', '솔루션충', '엄격한 관리자']
+    keyWords : ['헌신적', '젊은꼰대', '자기관리', '솔루션충', '엄격한관리자']
   },
 
   "ISFP": {
@@ -228,7 +228,7 @@ const mbtiInfo = {
     goodSynergyList : ['ESTP', 'ESFP', 'ISTP', 'INTP'],
     badSynergyList : ['ESTJ', 'ESTJ', 'INFP', 'ISFJ'],
     rareRate : 2,
-    keyWords : ["잘 들어줌", "약자를 돕자", "타인 기분에 예민", "착한데 억지로 삐뚤어지려함"]
+    keyWords : ["잘 들어줌", "약자를 돕자", "타인 기분에 예민", "착한데억지로삐뚤어지려함"]
   },
 
   "INFP": {
@@ -245,7 +245,7 @@ const mbtiInfo = {
     keyWords : ["상상력풍부",
                 "감성충만",
                 "과몰입",
-                "가끔 무력감"]
+                "가끔무력감"]
   },
 
     "ENFP": {
@@ -261,7 +261,7 @@ const mbtiInfo = {
         rareRate : 4,
         keyWords : ["불타는 열정",
             "감성충만",
-            "사람 너무 좋아",
+            "사람너무좋아",
             "적극적"]
     },
 
@@ -276,10 +276,10 @@ const mbtiInfo = {
         goodSynergyList : ['ISTP', 'INTP', 'ESTP', 'ESFP'],
         badSynergyList : ['ISTJ', 'ESTJ', 'ISFJ', 'ENTJ'],
         rareRate : 5,
-        keyWords : ["프로 문제해결러",
+        keyWords : ["프로문제해결러",
             "적극적",
             "의리",
-            "얘기 잘들어줌"]
+            "얘기잘들어줌"]
     },
 
     "INTJ": {

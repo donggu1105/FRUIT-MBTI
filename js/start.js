@@ -159,20 +159,38 @@ function setResult() {
     // 한줄 설명
     const resultDesc = document.querySelector('.resultDesc');
     resultDesc.innerHTML = mbtiInfo[mbti]["desc"];
+    // keyWords
+    const resultKeyWords = document.querySelector('.resultKeyWords')
+    for (let i = 0; i < mbtiInfo[mbti]["keyWords"].length; i++) {
+        resultKeyWords.innerHTML += "#" + mbtiInfo[mbti]["keyWords"][i] + " ";
+    }
+    // resultKeyWords.innerHTML =  mbtiInfo[mbti]["keyWords"].join(" ");
     // 콘텐트
     const resultContent = document.querySelector('.resultContent');
     resultContent.innerHTML = mbtiInfo[mbti]["content"].join("<br>");
-    // 희귀도
-    const resultRareRate = document.querySelector('.resultRareRate');
-    resultRareRate.innerHTML = mbtiInfo[mbti]["rareRate"];
-    // goodSynergyList
+
     const resultGoodSynergy = document.querySelector('.resultGoodSynergy')
-    resultGoodSynergy.innerHTML  = mbtiInfo[mbti]["goodSynergyList"].join("<br>");
+    resultGoodSynergy.innerHTML = "<h3>나랑 잘 맞는 과일은 ?</h3>"
+    let goodFruits = new Array();
+    for (let i = 0; i < mbtiInfo[mbti]["goodSynergyList"].length; i++) {
+        let goodFruitMbti = mbtiInfo[mbti]["goodSynergyList"][i];
+        let goodFruit = mbtiInfo[goodFruitMbti].nickName;
+        goodFruits.push(goodFruit);
+    }
+    resultGoodSynergy.innerHTML  += goodFruits.join(", ");
     // badSynergyList
     const resultBadSynergy = document.querySelector('.resultBadSynergy')
-    resultBadSynergy.innerHTML = mbtiInfo[mbti]["badSynergyList"].join("<br>");
-    // keyWords
-    const resultKeyWords = document.querySelector('.resultKeyWords')
-    resultKeyWords.innerHTML = mbtiInfo[mbti]["keyWords"].join("<br>");
+    resultBadSynergy.innerHTML = "<h3>나랑 잘 맞지않는 과일은 ?</h3>"
+    let badFruits = new Array();
+    for (let i = 0; i < mbtiInfo[mbti]["badSynergyList"].length; i++) {
+        let badFruitMbti = mbtiInfo[mbti]["badSynergyList"][i];
+        let badFruit = mbtiInfo[badFruitMbti].nickName;
+        badFruits.push(badFruit);
+    }
+    resultBadSynergy.innerHTML += badFruits.join(", ");
+    // 희귀도
+    // const resultRareRate = document.querySelector('.resultRareRate');
+    // resultRareRate.innerHTML = mbtiInfo[mbti]["rareRate"];
+    // goodSynergyList
 
 }
