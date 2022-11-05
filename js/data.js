@@ -228,7 +228,7 @@ const mbtiInfo = {
     goodSynergyList : ['ESTP', 'ESFP', 'ISTP', 'INTP'],
     badSynergyList : ['ESTJ', 'ESTJ', 'INFP', 'ISFJ'],
     rareRate : 2,
-    keyWords : ["잘 들어줌", "약자를 돕자", "타인 기분에 예민", "착한데억지로삐뚤어지려함"]
+    keyWords : ["잘들어줌", "약자를돕자", "타인기분에예민", "착한데억지로삐뚤어지려함"]
   },
 
   "INFP": {
