@@ -20,12 +20,10 @@ input:focus,button:focus{outline:none}
 img{max-width:100%;}
 button{font-family:'Esamanru',Arial,Sans-serif;}
 *{box-sizing:border-box}
-body{background: #FFFB97;}
-.inner{max-width:1024px;width:100%;margin:0 auto}
+
 /*Font 1rem=10px*/
-@media all and (max-width:812px){
-    html{font-size:62.5%;-webkit-text-size-adjust:none;}
-}
+html{font-size:62.5%;-webkit-text-size-adjust:none;}
+
 @media all and (max-width:680px){
     html{font-size:59.375%}
 }

@@ -1,3 +1,4 @@
+const body = document.querySelector('body');
 const main = document.querySelector("#main");
 const qna = document.querySelector("#qna");
 const result = document.querySelector("#result")
@@ -34,10 +35,13 @@ function begin() {
         setTimeout(() => {
             main.style.display = "none"
             qna.style.display = "block";
+            body.className += "qnaBody";
 
         }, 450)
         let qIdx = 0;
+
         goNext(qIdx);
+
     }, 450);
 }
 
@@ -100,12 +104,19 @@ function goResult() {
 }
 
 function goNext(qIdx) {
-
+    
     if (qIdx  === endPoint) {
         goResult();
         return;
 
     }
+
+    // 제목 페이지
+    var title = document.querySelector("#header .title");
+    var newSpan = document.createElement("span");
+    var spanText = document.createTextNode(`(${qIdx + 1}/${endPoint})`);
+    newSpan.appendChild(spanText);
+    title.appendChild(newSpan);
 
     var q = document.querySelector('.qBox');
     q.innerHTML = qnaList[qIdx].q;
@@ -117,6 +128,7 @@ function goNext(qIdx) {
 
     var status = document.querySelector('.statusBar');
     status.style.width = (100/endPoint) * (qIdx + 1) + '%';
+    
 }
 
 function calResult() {
