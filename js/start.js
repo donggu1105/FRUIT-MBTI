@@ -112,11 +112,8 @@ function goNext(qIdx) {
     }
 
     // 제목 페이지
-    var title = document.querySelector("#header .title");
-    var newSpan = document.createElement("span");
-    var spanText = document.createTextNode(`(${qIdx + 1}/${endPoint})`);
-    newSpan.appendChild(spanText);
-    title.appendChild(newSpan);
+    var page = document.querySelector("#header .page");
+    page.innerHTML = `(${qIdx + 1}/${endPoint})`;
 
     var q = document.querySelector('.qBox');
     q.innerHTML = qnaList[qIdx].q;
