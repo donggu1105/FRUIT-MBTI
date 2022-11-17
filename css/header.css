@@ -1,14 +1,5 @@
-#header {
-    background-color: #F7E600;
-    border-bottom: 1px solid white;
-    height: 60px;
-    padding: 0 !important;
-    line-height: unset !important;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.title{
-    display: inline-block;
-}
+#header{width:100%;background-color: inherit;border-bottom: 1.3px solid #DBD770;}
+#header .inner{display: flex;justify-content:space-between;align-items:center;height:80px;}
+h1 span{display:inline-block;font-weight:300;font-size:16px;color:#A8A44C;padding-left:6px;}
+nav{width:88px;display:flex;justify-content:space-between}
+.title{display: inline-block;font-weight:500;font-size:18px}

@@ -11,17 +11,14 @@ ol,ul,li{list-style:none}
 input,select,button,img{vertical-align:middle;font-size:14px}
 select, textarea{font-family:sans-serif;outline:none}
 i,em,address{font-style:normal}
-button{margin:0;padding:0;cursor:pointer;border:none;background:none}
+button{margin:0;padding:0;cursor:pointer}
 a{color:#2D3C48}
 a:link,a:visited{text-decoration:none;}
 a:hover{text-decoration:none}
 legend,caption{display:none}
 input:focus,button:focus{outline:none}
-img{max-width:100%;}
-button{font-family:'Esamanru',Arial,Sans-serif;}
 *{box-sizing:border-box}
-body{background: #FFFB97;}
-.inner{max-width:1024px;width:100%;margin:0 auto}
+
 /*Font 1rem=10px*/
 @media all and (max-width:812px){
     html{font-size:62.5%;-webkit-text-size-adjust:none;}
@@ -82,4 +79,4 @@ body{background: #FFFB97;}
 }
 @media all and (max-width:320px){
     html{font-size:26.5625%}
-}s
+}

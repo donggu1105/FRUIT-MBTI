@@ -25,8 +25,8 @@
 
         <title>단톡방 MBTI 테스트</title>
 
-
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/font.css">
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
         <link rel="stylesheet" href="css/default.css"/>
         <link rel="stylesheet" href="css/main.css"/>
         <link rel="stylesheet" href="css/qna.css"/>
@@ -34,9 +34,9 @@
         <link rel="stylesheet" href="css/animation.css"/>
         <link rel="stylesheet" href="css/header.css"/>
         <link rel="stylesheet" href="css/footer.css"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet">
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+        <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet"> -->
 
         <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
         <script>
@@ -50,11 +50,17 @@
 
     <body>
 
-        <!--            header -->
+<!--          header -->
         <section id="header" class="mx-auto">
             <header class="mx-auto">
-                <div>
-                        <div class="mx-1 my-2 title"><a href="" style="color: black;">단톡방 MBTI 테스트</a></div>
+                <div class="inner">
+                    <h1><a href="/"><img src="/img/main_logo.svg" alt="N년생 로고"><span>N생</span></a></h1>
+                    <div class="mx-1 my-2 title">단톡방 과일 TEST</div>
+                    <nav>
+                        <button type="button"><img src="/img/pagesm_btn.svg" alt="최소화"></button>
+                        <button type="button"><img src="/img/pagefull_btn.svg" alt="최소화"></button>
+                        <button type="button"><img src="/img/pageclose_btn.svg" alt="최소화"></button>
+                    </nav>
                 </div>
             </header>
         </section>
@@ -62,14 +68,12 @@
         <div class="container">
 <!--            MAIN      -->
             <section id="main" class="mx-auto my-5 py-5 px-3">
-                <h1 class="pt-5 mx-auto">단톡방에서 나는 어떤 유형일까 ? </h1>
-                <div class="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
-                    <img src="img/main.png" alt="mainImage" class="img-fluid"/>
+                <div class="inner">
+                    <div class="imgArea">
+                        <img src="img/main_img.gif" alt="과일바구니" />
+                    </div>
+                    <button type="button" class="startBtn" onclick="js:begin()"><img src="/img/main_btn.svg">테스트 시작하기</button>
                 </div>
-                <p>테스트를 시작하려면 아래 버튼 클릭!</p>
-
-                <button type="button" class="btn btn-outline-danger mt-3 px-5 py-3" onclick="js:begin()">시작하기</button>
-
             </section>
 
 <!--           QNA          -->
@@ -77,8 +81,6 @@
                 <div class="status mx-auto mt-5">
                     <div class="statusBar">
                     </div>
-
-
                 </div>
                 <div class="qBox my-5 py-3 mx-auto">
                 </div>
@@ -121,11 +123,9 @@
                      data-ad-height  = "100"></ins>
                 <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
             </section>
-
-
         </div>
 
-        <!--            footer -->
+<!--          footer -->
         <section id="footer" class="mx-auto mt-5">
             <footer>
                 <p> <strong>Contact</strong> : kbh11051@gmail.com </p>
