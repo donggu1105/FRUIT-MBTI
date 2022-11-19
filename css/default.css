@@ -29,6 +29,9 @@ html{font-size:62.5%;-webkit-text-size-adjust:none;}
 @media all and (max-width:1500px){
     html{font-size:43.75%}
 }
+@media all and (max-width:768px){
+    html{font-size:62.5%}
+}
 @media all and (max-width:680px){
     html{font-size:59.375%}
 }
