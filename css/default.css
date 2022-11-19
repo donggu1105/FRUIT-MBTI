@@ -78,14 +78,14 @@ html{font-size:62.5%;-webkit-text-size-adjust:none;}
     html{font-size:34.375%}
 }
 @media all and (max-width:375px){
-     html{font-size:32.8125%}
+    html{font-size:62.5%}
 }
 @media all and (max-width:360px){
-   html{font-size:31.25%}
+    html{font-size:59.375%}
 }
 @media all and (max-width:340px){
-   html{font-size:29.6875%}
+    html{font-size:59.375%}
 }
 @media all and (max-width:320px){
-    html{font-size:26.5625%}
-}s
+    html{font-size:56.25%}
+}
