@@ -54,7 +54,7 @@ function addAnswer(text, qIdx, idx) {
     answer.classList.add("mx-auto");
     answer.classList.add("fadeIn");
     a.appendChild(answer);
-    answer.innerHTML = text;
+    answer.innerHTML = (Number(idx) + 1)+". "+text;
 
     // answer.innerHTML = "<img src='/img/answer_box.png'/>"
 
@@ -115,8 +115,8 @@ function goNext(qIdx) {
     var page = document.querySelector("#header .page");
     page.innerHTML = `(${qIdx + 1}/${endPoint})`;
 
-    var q = document.querySelector('.qBox');
-    q.innerHTML = qnaList[qIdx].q;
+    var q = document.querySelector('.qBox .box');
+    q.innerHTML = "Q. "+qnaList[qIdx].q;
 
     // 버튼 만들기
     for (let i in qnaList[qIdx].a) {

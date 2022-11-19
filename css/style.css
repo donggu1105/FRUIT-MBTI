@@ -35,3 +35,12 @@ header .title{display: inline-block;font-weight:500;font-size:1.8rem}
 /* qna */
 .status{background:#fff;height:0.6rem}
 .status .statusBar{background:#7EA2FF;height:100%;border-radius: 0 0.4rem 0.4rem 0}
+.qBox{position:relative;margin-top:4rem;padding-left:9rem;margin-bottom:4rem}
+.qBox .box{position:relative;background:#fff;border-radius:2rem;padding:2.4rem 3.2rem;font-size:2.4rem;line-height:3.6rem;font-weight:300}
+.qBox .box::after{content:"";display:inline-block;width:2.7rem;height:4.3rem;background: url('../img/q_box_bubble.png') no-repeat right top;position:absolute;left:-2rem;top:2rem}
+.qBox .name{font-size:2.2rem;font-weight:300;display:inline-block;margin-bottom:1.6rem;}
+.qBox .qLogo{position:absolute;left:0;top:0}
+.answerBox{}
+.answerBox .answerList{}
+
+
