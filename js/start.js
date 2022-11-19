@@ -46,14 +46,14 @@ function begin() {
 }
 
 function addAnswer(text, qIdx, idx) {
-    var a = document.querySelector(".answerBox");
+    var a = document.querySelectorAll(".answerBox .box");
     var answer = document.createElement("button");
     answer.classList.add('answerList');
     answer.classList.add("my-3");
     answer.classList.add("py-3");
     answer.classList.add("mx-auto");
     answer.classList.add("fadeIn");
-    a.appendChild(answer);
+    a[qIdx].appendChild(answer);
     answer.innerHTML = (Number(idx) + 1)+". "+text;
 
     // answer.innerHTML = "<img src='/img/answer_box.png'/>"
@@ -117,6 +117,11 @@ function goNext(qIdx) {
 
     var q = document.querySelector('.qBox .box');
     q.innerHTML = "Q. "+qnaList[qIdx].q;
+
+    var a = document.querySelector('.answerBox');
+    var aBox = document.createElement("div");
+    aBox.classList.add('box');
+    a.appendChild(aBox);
 
     // 버튼 만들기
     for (let i in qnaList[qIdx].a) {
