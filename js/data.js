@@ -172,7 +172,7 @@ const mbtiInfo = {
     goodSynergyList : ['ENTP', 'ENFP', 'INTP', 'ISTP'],
     badSynergyList : ['ENTJ', 'INTJ', 'ISFP', 'INFJ'],
     rareRate : 8,
-    keyWords : ['헌신적', '젊은꼰대', '자기관리', '솔루션충', '엄격한관리자']
+    keyWords : ['용감한 수호자']
   },
 
   "ISFP": {
@@ -186,7 +186,7 @@ const mbtiInfo = {
     goodSynergyList : ['ENTJ', 'ESTJ', 'INTJ', 'ISTJ'],
     badSynergyList : ['ENTP', 'INTP', 'ISFJ', 'ISTP'],
     rareRate : 7,
-    keyWords : []
+    keyWords : ["프로공감러", "온화함", "귀찮음"]
   },
 
   "ESFP": {
@@ -199,7 +199,7 @@ const mbtiInfo = {
     goodSynergyList : ['INTJ', 'INFJ', 'ENTJ', 'ENFJ'],
     badSynergyList : ['INTP', 'ENTP', 'ENFP', 'ESFJ'],
     rareRate : 5,
-    keyWords : []
+    keyWords : ['프로짤방러', '카톡방 댕댕이']
   },
 
 
@@ -213,7 +213,7 @@ const mbtiInfo = {
     goodSynergyList : ['ISTP', 'INTP', 'ESTP', 'ESFP'],
     badSynergyList : ['ISTJ', 'ESTJ', 'ISFJ', 'ENTJ'],
     rareRate : 5,
-    keyWords : []
+    keyWords : ['사랑꾼', '좋은게좋은거야', '모든건 둥글둥글하게 처리해요']
   },
 
 
