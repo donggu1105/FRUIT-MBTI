@@ -1,8 +1,15 @@
-<h1> 나의 단톡방 MBTI 유형을 알아보자 ! </h1>
+<h1 style="text-align: center;"> 간단한 질문을 통해 단톡방에서 나의 정체를 알아보자 ! </h1>
 
+```
+https://donggu.ml
+```
 
-프론트 : html, css, javascript 
+<h1 style="text-align: center"> 메인 화면 </h1>
 
-배포 : Netlify 
+<img style="align-content: center" src="img/main.png">
 
-<img src="img/share.png">
+<h1 style="text-align: center"> 문제 화면 </h1>
+<img style="align-content: center" src="img/main.png">
+
+<h1 style="text-align: center"> 결과 화면  </h1>
+<img style="align-content: center" src="img/main.png">
