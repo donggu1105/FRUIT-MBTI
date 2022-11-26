@@ -1,6 +1,7 @@
 const body = document.querySelector('body');
 const main = document.querySelector("#main");
 const qna = document.querySelector("#qna");
+const roadingPage = document.getElementById("roadingPage");
 const result = document.querySelector("#result")
 const endPoint = 12;
 const select = {
@@ -83,14 +84,8 @@ function addAnswer(text, qIdx, idx) {
 
 
 
-function goResult() {
-
-    // header 글
-    document.querySelector("#header .page").remove();
-    document.querySelector("#header .title a").innerHTML += " 결과";
+function goResult() {   
     
-    body.classList.remove("qnaBody");
-
     qna.style.WebkitAnimation = "fadeOut 1s";
     qna.style.animation = "fadeOut 1s";
 
@@ -99,7 +94,9 @@ function goResult() {
         result.style.WebkitAnimation = "fadeIn 1s";
         result.style.animation = "fadeIn 1s";
         setTimeout(() => {
-            qna.style.display = "none"
+            roadingPage.style.display = "none";
+            body.className += "blueBg";
+            document.querySelector("#header .title a").innerHTML += " 결과";
             result.style.display = "block";
 
         }, 450)
@@ -112,6 +109,13 @@ function goResult() {
 function goNext(qIdx) {
     
     if (qIdx  === endPoint) {
+
+        // 로딩페이지
+        body.className = "";
+        document.querySelector("#header .page").remove();
+        qna.style.display = "none"
+        roadingPage.style.display = "block";
+
         goResult();
         return;
 
@@ -140,7 +144,6 @@ function goNext(qIdx) {
 }
 
 function calResult() {
-
 
     var keys = Object.keys(select);
     var mbti = keys[0];
@@ -174,7 +177,7 @@ function setResult() {
     resultImg.alt = mbti;
     resultImg.classList.add('img-fluid');
     imgDiv.appendChild(resultImg);
-
+    body.style.overflowY = 'auto';
 
     // 한줄 설명
     const resultDesc = document.querySelector('.resultDesc');
@@ -193,16 +196,23 @@ function setResult() {
     resultConList.innerHTML = "<li>"+mbtiInfo[mbti]["content"].join("</li><li>")+"</li>";
 
     const resultGoodSynergy = document.querySelector('.resultGoodSynergy')
-    resultGoodSynergy.innerHTML = "<h3>나랑 잘 맞는 과일은 ?</h3>"
-    let goodFruits = new Array();
-    for (let i = 0; i < mbtiInfo[mbti]["goodSynergyList"].length; i++) {
+    resultGoodSynergy.innerHTML = "<h3 class='borderDeco'>나랑 가장 잘 맞는 과일은?</h3>"
+    let goodFruits = '<ul class="goodList">';
+    
+    for (let i = 0; i < 2; i++) { // mbtiInfo[mbti]["goodSynergyList"].length 수정
+
         let goodFruitMbti = mbtiInfo[mbti]["goodSynergyList"][i];
-        let goodFruit = mbtiInfo[goodFruitMbti].nickName;
-        goodFruits.push(goodFruit);
+        let goodFruitImg = 'img/image-' + goodFruitMbti + '.png';
+
+        goodFruits += `<li class="good">
+                        <div class="imgArea"><img src="${goodFruitImg}"></div>
+                        <div class="name" style="color:${mbtiInfo[goodFruitMbti].color};">${mbtiInfo[goodFruitMbti].desc}<div>
+                       </li>`;
     }
-    resultGoodSynergy.innerHTML  += goodFruits.join(", ");
+    goodFruits += "</ul>";
+    resultGoodSynergy.innerHTML  += goodFruits;
     // badSynergyList
-    const resultBadSynergy = document.querySelector('.resultBadSynergy')
+    /*const resultBadSynergy = document.querySelector('.resultBadSynergy')
     resultBadSynergy.innerHTML = "<h3>나랑 잘 맞지않는 과일은 ?</h3>"
     let badFruits = new Array();
     for (let i = 0; i < mbtiInfo[mbti]["badSynergyList"].length; i++) {
@@ -210,10 +220,19 @@ function setResult() {
         let badFruit = mbtiInfo[badFruitMbti].nickName;
         badFruits.push(badFruit);
     }
-    resultBadSynergy.innerHTML += badFruits.join(", ");
+    resultBadSynergy.innerHTML += badFruits.join(", ");*/
     // 희귀도
     // const resultRareRate = document.querySelector('.resultRareRate');
     // resultRareRate.innerHTML = mbtiInfo[mbti]["rareRate"];
     // goodSynergyList
 
+}
+// 스크롤바 상단으로 리셋
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+    body.scrollTo(0, 0);
+}
+// 테스트 다시 하기
+function setBack() {
+    location.reload();
 }

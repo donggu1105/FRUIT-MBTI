@@ -6,6 +6,7 @@ body{background: #FFFB97;height:100vh;max-height:100%;width:100%;overflow:hidden
 .blueBg svg rect,
 .blueBg svg path{fill:#6C7F8F}
 .blueBg header{border-color:#869FB5;}
+#kakao_ad{display:block;}
 
 /* header */
 header{width:100%;background-color: inherit; border-bottom: 0.13rem solid #DBD770;}
@@ -19,7 +20,7 @@ nav svg rect,
 nav svg path{fill:#9F9C47}
 header .title{display: inline-block;font-weight:500;font-size:1.8rem}
 
-/* qnaBodygit pus */
+/* qnaBody header */
 .qnaBody .main_logo,
 .qnaBody h1 span{display:none}
 .qnaBody .qna_logo{display:block;}
@@ -35,7 +36,7 @@ header .title{display: inline-block;font-weight:500;font-size:1.8rem}
 #main .startBtn{background:#fff;max-width:71.4rem;width:100%;height:6.8rem;border-radius:3.2rem;}
 #main .startBtn img{width:4.8rem}
 #main h2{position:absolute;font-size:7.8rem;line-height:8rem;font-weight:500;bottom:17rem;left:50%;transform:translate(-50%);color:#fff;}
-#main h2 span{font-size:5.2rem;font-weight:inherit;}
+#main h2 span{color:inherit;font-size:5.2rem;font-weight:inherit;}
 
 /* qna */
 .status{background:#fff;height:0.6rem}
@@ -51,21 +52,36 @@ header .title{display: inline-block;font-weight:500;font-size:1.8rem}
 .answerBox .answerList:first-of-type::after{content:'';display:inline-block;width:2.4rem;height:2.5rem;position:absolute;right:-2.4rem;top:1rem;background:url('/img/a_bubble.png') no-repeat top right;}
 
 /* result */
-#result .inner{margin-top:4rem;background:#fff;border-radius:0.8rem;padding:5.7rem 6.4rem;text-align:center;}
+#result{padding: 4rem 0 4.7rem}
+#result .inner{background:#fff;border-radius:0.8rem;padding:5.7rem 6.4rem;text-align:center;}
 .borderDeco{color:#2D3C48;position:relative;font-size:1.8rem;line-height:2.1rem;padding: 1rem 1.6rem;display:inline-block;}
 .borderDeco::after{content:'';position:absolute;left:0;bottom:0;display:inline-block;width:100%;height:50%;border:1px solid #E1E1E1;border-top:0;border-radius: 0 0 2rem 2rem;}
 .borderDeco::before{content:'';position:absolute;left:50%;transform:translateX(-50%);bottom:-0.7rem;width:1px;height:0.7rem;background:#E1E1E1;}
-.resultDesc b{font-size:2.4rem;font-weight:700;vertical-align:middle;}
+.resultDesc b{color:inherit;font-size:2.4rem;font-weight:700;vertical-align:middle;}
 .resultArea{padding: 4rem 0 9rem;display:flex;justify-content:space-between;}
 #resultImg{width:34.4rem;height:32.6rem;}
 .resultContent{width:52.8rem;text-align:left;}
 .resultContent ul{padding-left:2.4rem;}
 .resultContent li{list-style:disc;font-size:1.6rem;font-weight:300;line-height:3.1rem;margin-bottom:0.8rem;}
-
 .resultContent li:last-of-type{margin-bottom:0;}
+#result h3{font-weight:500;}
+.goodList{position:relative;padding: 5.5rem 0 8.8rem;max-width:57.7rem;margin:0 auto;display:flex;justify-content:space-between}
+.goodList::after{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%); content:'\00026';font-family:'Noto Sans KR';font-size:2.4rem;color:#2D3C48}
+.goodList .good{height:24.4rem;display:inline-flex;flex-direction:column;justify-content:space-between;align-items:center;}
+.goodList .good .imgArea{width:20rem;}
+.goodList .good .name{font-size:1.8rem;font-weight:500;white-space:nowrap}
+.goodList .good .name b{font-size:2.4rem;font-weight:700;color:inherit;}
+#result .btnArea{display:flex;justify-content:space-between}
+#result .btnArea button{width:48.4%;border-radius:6rem;height:6.8rem;font-size:2.4rem;font-weight:300;}
+#result .btnArea button img{width:4.8rem;}
+#result .backBtn{background:#C3E4FF}
+#result .shareBtn{background:#FFFB97}
 
-
-
+/* roadingPage */
+#roadingPage{position:relative;height:calc( 100% - 8rem );width:100%;background: url('/img/main_bg.png') top 2rem left 0;background-size:3rem 6.3rem; text-align:center}
+.roding{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);}
+.roding img{width:30rem;}
+.roding h3{width:100vw; padding-top:2rem;font-size:2.8rem;line-height:4.6rem;font-weight:500;color:#6D4D45}
 
 @media all and (max-width:768px){
     .inner{max-width:100%;padding:0 2.4rem;}
@@ -90,6 +106,28 @@ header .title{display: inline-block;font-weight:500;font-size:1.8rem}
     .qBox .qLogo{width:4.8rem}
     .answerBox{padding-right:2.4rem;padding-left:0;}
     .answerBox .answerList{font-size:2.2rem}
+
+    /* result */
+    #result{padding: 4rem 2.4rem 4rem;}
+    #result .inner{padding:4rem 2.4rem}
+    .borderDeco{font-size:1.4rem;line-height:1.6rem;padding: 0.8rem 2.3rem}
+    .resultDesc b{font-size:2rem;}
+    .resultArea{padding-bottom: 8rem;}
+    #resultImg{width:38%;height:24rem;}
+    .resultContent{width:60%}
+    .resultContent ul{padding-left:1.8rem;}
+    .resultContent li{font-size:1.3rem;line-height:2.2rem}
+    .goodList{padding: 4.7rem 0 8rem;max-width:53rem;}
+    .goodList::after{font-size:2.4rem;}
+    .goodList .good{height:22rem;}
+    .goodList .good .imgArea{width:17.6rem;}
+    #result .btnArea button{height:5.6rem;font-size:2rem;}
+    #result .btnArea button img{width:3.6rem;}
+
+    /* roadingPage */
+    #roadingPage{height:calc( 100% - 6.4rem );}
+    .roding img{width:26rem;}
+    .roding h3{font-size:2.4rem;line-height:2.4rem}
 }
 
 @media all and (max-width:375px){
@@ -125,4 +163,27 @@ header .title{display: inline-block;font-weight:500;font-size:1.8rem}
     .answerBox .answerList:last-of-type{margin-bottom:0;}
     .answerBox .answerList:first-of-type::after{width:0.8rem;height:1.2rem;right:-0.8rem;top:1.4rem}
 
+    /* result */
+    #result{padding: 2.4rem 1.6rem 3.2rem}
+    #result .pc{display:none;}
+    #result .inner{padding:2.4rem 1.2rem}
+    .borderDeco{font-size:1.4rem;padding: 0.7rem 3.3rem}
+    .resultArea{padding: 1.6rem 0 4.8rem;flex-direction:column}
+    #resultImg{width:100%;height:initial;margin-bottom:1.6rem}
+    .resultContent{width:100%;}
+    .resultContent ul{padding-left:2rem;}
+    .resultContent li{font-size:1.3rem;line-height:2.4rem}
+    .goodList{padding: 2.3rem 0 4.8rem;max-width:initial;}
+    .goodList::after{font-size:1.4rem;}
+    .goodList .good{height:10.9rem}
+    .goodList .good .imgArea{width:6.4rem}
+    .goodList .good .name{font-size:1.1rem}
+    .goodList .good .name b{font-size:1.7rem;}
+    #result .btnArea button{height:4rem;font-size:1.3rem;}
+    #result .btnArea button img{width:2.3rem;}
+
+    /* roadingPage */
+    #roadingPage{height:calc( 100% - 4.8rem );background-size:1.6rem 3.4rem;background-position: left top 1rem;}
+    .roding img{width:14.2rem;}
+    .roding h3{font-size:1.8rem}
 }
