@@ -35,7 +35,7 @@ function begin() {
         setTimeout(() => {
             main.style.display = "none"
             qna.style.display = "block";
-            body.className += "qnaBody";
+            body.className += "qnaBody blueBg";
 
         }, 450)
         let qIdx = 0;
@@ -84,6 +84,12 @@ function addAnswer(text, qIdx, idx) {
 
 
 function goResult() {
+
+    // header 글
+    document.querySelector("#header .page").remove();
+    document.querySelector("#header .title a").innerHTML += " 결과";
+    
+    body.classList.remove("qnaBody");
 
     qna.style.WebkitAnimation = "fadeOut 1s";
     qna.style.animation = "fadeOut 1s";
@@ -158,8 +164,8 @@ function setResult() {
 
     let mbti = calResult();
     // 이름
-    const resultName = document.querySelector(".resultname");
-    resultName.innerHTML = mbtiInfo[mbti]["nickName"];
+    /*const resultName = document.querySelector(".resultname");
+    resultName.innerHTML = mbtiInfo[mbti]["nickName"];*/
     // 이미지
     var resultImg = document.createElement('img');
     const imgDiv = document.querySelector('#resultImg');
@@ -173,15 +179,18 @@ function setResult() {
     // 한줄 설명
     const resultDesc = document.querySelector('.resultDesc');
     resultDesc.innerHTML = mbtiInfo[mbti]["desc"];
+    resultDesc.style.color = mbtiInfo[mbti]["color"];
     // keyWords
-    const resultKeyWords = document.querySelector('.resultKeyWords')
+    /*const resultKeyWords = document.querySelector('.resultKeyWords')
     for (let i = 0; i < mbtiInfo[mbti]["keyWords"].length; i++) {
         resultKeyWords.innerHTML += "#" + mbtiInfo[mbti]["keyWords"][i] + " ";
     }
-    // resultKeyWords.innerHTML =  mbtiInfo[mbti]["keyWords"].join(" ");
+    // resultKeyWords.innerHTML =  mbtiInfo[mbti]["keyWords"].join(" ");*/
     // 콘텐트
     const resultContent = document.querySelector('.resultContent');
-    resultContent.innerHTML = mbtiInfo[mbti]["content"].join("<br>");
+    var resultConList = document.createElement('ul');
+    resultContent.appendChild(resultConList);
+    resultConList.innerHTML = "<li>"+mbtiInfo[mbti]["content"].join("</li><li>")+"</li>";
 
     const resultGoodSynergy = document.querySelector('.resultGoodSynergy')
     resultGoodSynergy.innerHTML = "<h3>나랑 잘 맞는 과일은 ?</h3>"
