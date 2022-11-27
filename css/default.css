@@ -4,7 +4,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,
 address,big,cite,code,del,dfn,em,font,img,ins,
 q,s,samp,small,strike,strong,sub,sup,tt,var,b,
 u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:none 0;border-spacing:0;color:#2D3C48}
-body{font-family:'Esamanru',Arial,Sans-serif;background-color:#fff;font-size:14px;line-height:1;font-weight:400;letter-spacing:0;}
+body{font-family:'Esamanru',Arial,Sans-serif;background-color:#fff;font-size:14px;line-height:1;font-weight:400;letter-spacing:0;min-width:240px}
 header,section,article,nav,aside,footer,address{margin:0;padding:0;border:none 0;border-spacing:0}
 img,fieldset,iframe{border:0}
 ol,ul,li{list-style:none}
