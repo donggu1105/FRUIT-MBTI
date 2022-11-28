@@ -5,7 +5,7 @@ function setShare() {
     var resultImg = document.querySelector("#resultImg")
     var resultAlt = resultImg.firstElementChild.alt;
 
-    const shareTitle = "단톡방 MBTI 유형"
+    const shareTitle = "단톡방 과일 테스트"
     const shareDesc = mbtiInfo[resultAlt].desc;
     const shareImage = url + "img/image-" + resultAlt + ".png";
     const shareURL = url + "page/result-" + resultAlt + '.html';
