@@ -1,4 +1,4 @@
-const url = "https://fruitmbti.com";
+const url = "https://fruitmbti.com/";
 
 
 function setShare() {
