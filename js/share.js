@@ -1,5 +1,4 @@
-const url = "https://donggu.ml/";
-// const url = "https://fruitmbti.com"; 이거 배포할떄 바꿔야함
+const url = "https://fruitmbti.com";
 
 
 function setShare() {
