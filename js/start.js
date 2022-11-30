@@ -181,7 +181,7 @@ function setResult() {
 
     // 한줄 설명
     const resultDesc = document.querySelector('.resultDesc');
-    resultDesc.innerHTML = mbtiInfo[mbti]["desc"];
+    resultDesc.innerHTML = mbtiInfo[mbti]["desc"]+"<b>"+mbtiInfo[mbti]["nickName"]+"</b>";
     resultDesc.style.color = mbtiInfo[mbti]["color"];
     // keyWords
     /*const resultKeyWords = document.querySelector('.resultKeyWords')
@@ -206,7 +206,7 @@ function setResult() {
 
         goodFruits += `<li class="good">
                         <div class="imgArea"><img src="${goodFruitImg}"></div>
-                        <div class="name" style="color:${mbtiInfo[goodFruitMbti].color};">${mbtiInfo[goodFruitMbti].desc}<div>
+                        <div class="name" style="color:${mbtiInfo[goodFruitMbti].color};">${mbtiInfo[goodFruitMbti].desc}<b>${mbtiInfo[goodFruitMbti].nickName}</b><div>
                        </li>`;
     }
     goodFruits += "</ul>";
