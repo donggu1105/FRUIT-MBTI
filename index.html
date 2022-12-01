@@ -141,6 +141,7 @@
                     <div class="btnArea">
                         <button type="button" class="backBtn" onclick="js:setBack();"><img src="/img/backBtn_icon.svg" alt="처음으로"> <spna class="pc">테스트 </spna>다시 하기</button>
                         <button type="button" class="kakao shareBtn" onclick="js:setShare()"><img src="/img/shareBtn_icon.svg" alt="공유"> 결과 공유<spna class="pc"> 하기</spna></button>
+                        <button type="button" class="" onclick="js:setAllResult();">모든 결과표 보기</button>
                     </div>
                 </div>
             </section>
@@ -151,10 +152,13 @@
                     <h3>단톡방 과일유형 측정중...</h3>
                 </div>
             </section>
-            <script src="js/data.js" charset="utf-8"></script>
-            <script src="js/share.js" charset="utf-8"></script>
-            <script src="js/start.js" charset="utf-8"></script>
-
+<!--        모든 결과 보기-->
+            <section id="allResult">
+                <div class="inner">
+                </div>
+                <button type="button" class="returnBtn" onclick="js:returnResult();">결과로 돌아가기</button>
+            </section>
+            
             <section id="kakao_ad">
                 <ins class="kakao_ad_area" style="display:none;"
                      data-ad-unit    = "DAN-A31SSVWATOa6u2lw"
@@ -162,20 +166,10 @@
                      data-ad-height  = "100"></ins>
                 <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
             </section>
-            <section id="allResult">
-                <div class="inner">
-                    <div class="fruit">
-                        <div class="imgArea">
-                            <img src="/img/image-ENFJ.png" alt="ENFJ">
-                        </div>
-                        <ul class="tag">
-                            <li>#책임감</li>
-                            <li>#원리원칙</li>
-                            <li>#매너</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
+
+            <script src="js/data.js" charset="utf-8"></script>
+            <script src="js/share.js" charset="utf-8"></script>
+            <script src="js/start.js" charset="utf-8"></script>
         </div>
 <!--          footer
         <section id="footer" class="mx-auto mt-5">

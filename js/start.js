@@ -2,7 +2,9 @@ const body = document.querySelector('body');
 const main = document.querySelector("#main");
 const qna = document.querySelector("#qna");
 const roadingPage = document.getElementById("roadingPage");
-const result = document.querySelector("#result")
+const result = document.querySelector("#result");
+const allResult = document.getElementById("allResult");
+const kakao_ad = document.getElementById("kakao_ad");
 const endPoint = 12;
 const select = {
     "ISTJ": 0,
@@ -166,9 +168,6 @@ function calResult() {
 function setResult() {
 
     let mbti = calResult();
-    // 이름
-    /*const resultName = document.querySelector(".resultname");
-    resultName.innerHTML = mbtiInfo[mbti]["nickName"];*/
     // 이미지
     var resultImg = document.createElement('img');
     const imgDiv = document.querySelector('#resultImg');
@@ -227,8 +226,56 @@ function setResult() {
     // goodSynergyList
 
 }
+// 모든 결과표 보기
+function setAllResult(){
+    goTop();
+    result.style.display = "none";
+    allResult.style.display = "block";
+    kakao_ad.style.display = "none";
+    document.querySelector("#header .title a").innerHTML = "모든 결과유형 보기";
+
+    const allResultInner = document.querySelector("#allResult .inner");
+    var allResultList = "";
+
+    // 결과표 유형 리스트
+    for(let mbti in mbtiInfo) {
+        var keyWords = mbtiInfo[mbti]['keyWords'];
+        
+        allResultList += 
+            `<div class="fruit" id="fruit_${mbti}">
+                <h3 class="borderDeco" style="color:${mbtiInfo[mbti]['color']}">${mbtiInfo[mbti]['desc']}<b>${mbtiInfo[mbti]['nickName']}</b></h3>
+                <div class="imgArea">
+                    <img src="/img/image-${mbti}.png" alt="${mbti}">
+                </div>
+                <ul class="tag">`;
+        // 키워드
+        for( let word of keyWords){
+            allResultList += "<li>#"+word+"</li>";
+        }
+        
+        allResultList +="</ul></div>";
+    }
+    
+    // 출력
+    allResultInner.innerHTML = allResultList;
+
+}
+
+// 모든 결과 => 결과표로 돌아가기
+function returnResult(){
+    goTop();
+    result.style.display = "block";
+    allResult.style.display = "none";
+    kakao_ad.style.display = "block";
+    document.querySelector("#header .title a").innerHTML = "단톡방 과일 TEST 결과";
+}
+
 // 스크롤바 상단으로 리셋
 window.onbeforeunload = function () {
+    goTop();
+}
+// 스크롤바 상단
+function goTop(){
     window.scrollTo(0, 0);
     body.scrollTo(0, 0);
 }
