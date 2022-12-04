@@ -29,63 +29,6 @@ html{font-size:62.5%;-webkit-text-size-adjust:none;}
 @media all and (max-width:1500px){
     html{font-size:43.75%}
 }
-@media all and (max-width:812px){
+@media all and (max-width:1024px){
     html{font-size:62.5%}
-}
-@media all and (max-width:680px){
-    html{font-size:59.375%}
-}
-@media all and (max-width:640px){
-    html{font-size:56.25%}
-}
-@media all and (max-width:620px){
-    html{font-size:54.6875%}
-}
-@media all and (max-width:590px){
-    html{font-size:51.5625%}
-}
-@media all and (max-width:568px){
-    html{font-size:50%}
-}
-@media all and (max-width:550px){
-    html{font-size:48.4375%}
-}
-@media all and (max-width:530px){
-    html{font-size:46.875%}
-}
-@media all and (max-width:515px){
-    html{font-size:45.3125%}
-}
-@media all and (max-width:500px){
-    html{font-size:43.75%}
-}
-@media all and (max-width:470px){
-    html{font-size:42.1875%}
-}
-@media all and (max-width:465px){
-    html{font-size:40.625%}
-}
-@media all and (max-width:440px){
-    html{font-size:39.0625%}
-}
-@media all and (max-width:414px){
-    html{font-size:37.49993%}
-}
-@media all and (max-width:400px){
-    html{font-size:35.9375%}
-}
-@media all and (max-width:390px){
-    html{font-size:34.375%}
-}
-@media all and (max-width:375px){
-     html{font-size:32.8125%}
-}
-@media all and (max-width:360px){
-   html{font-size:31.25%}
-}
-@media all and (max-width:340px){
-   html{font-size:29.6875%}
-}
-@media all and (max-width:320px){
-    html{font-size:26.5625%}
 }
