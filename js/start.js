@@ -1,4 +1,5 @@
 const body = document.querySelector('body');
+const header = document.getElementById('header');
 const main = document.querySelector("#main");
 const qna = document.querySelector("#qna");
 const roadingPage = document.getElementById("roadingPage");
@@ -97,6 +98,8 @@ function goResult() {
         result.style.animation = "fadeIn 1s";
         setTimeout(() => {
             roadingPage.style.display = "none";
+            kakao_ad.style.display = "block";
+            header.style.display = "block";
             body.className += "blueBg";
             document.querySelector("#header .title a").innerHTML += " 결과";
             result.style.display = "block";
@@ -115,7 +118,9 @@ function goNext(qIdx) {
         // 로딩페이지
         body.className = "";
         document.querySelector("#header .page").remove();
-        qna.style.display = "none"
+        qna.style.display = "none";
+        kakao_ad.style.display = "none";
+        header.style.display = "none";
         roadingPage.style.display = "block";
 
         goResult();
@@ -193,33 +198,28 @@ function setResult() {
     var resultConList = document.createElement('ul');
     resultContent.appendChild(resultConList);
     resultConList.innerHTML = "<li>"+mbtiInfo[mbti]["content"].join("</li><li>")+"</li>";
-
+   
+    // goodSynergyList
     const resultGoodSynergy = document.querySelector('.resultGoodSynergy')
-    resultGoodSynergy.innerHTML = "<h3 class='borderDeco'>나랑 가장 잘 맞는 과일은?</h3>"
-    let goodFruits = '<ul class="goodList">';
-    
-    for (let i = 0; i < 2; i++) { // mbtiInfo[mbti]["goodSynergyList"].length 수정
+    resultGoodSynergy.innerHTML = "<h3 class='borderDeco'>나랑 가장 <br class='mo'/><b>잘 맞는</b> 과일은?</h3>"
 
-        let goodFruitMbti = mbtiInfo[mbti]["goodSynergyList"][i];
-        let goodFruitImg = 'img/image-' + goodFruitMbti + '.png';
+    let goodFruitMbti = mbtiInfo[mbti]["goodSynergyList"][0];
+    let goodFruitImg = 'img/image-' + goodFruitMbti + '.png';
 
-        goodFruits += `<li class="good">
-                        <div class="imgArea"><img src="${goodFruitImg}"></div>
-                        <div class="name" style="color:${mbtiInfo[goodFruitMbti].color};">${mbtiInfo[goodFruitMbti].desc}<b>${mbtiInfo[goodFruitMbti].nickName}</b><div>
-                       </li>`;
-    }
-    goodFruits += "</ul>";
-    resultGoodSynergy.innerHTML  += goodFruits;
+    let goodFruit = `<div class="imgArea"><img src="${goodFruitImg}" alt="${goodFruitMbti}"></div>
+                    <div class="name" style="color:${mbtiInfo[goodFruitMbti].color};">${mbtiInfo[goodFruitMbti].desc}<b>${mbtiInfo[goodFruitMbti].nickName}</b></div>`;
+    resultGoodSynergy.innerHTML  += goodFruit;
+
     // badSynergyList
-    /*const resultBadSynergy = document.querySelector('.resultBadSynergy')
-    resultBadSynergy.innerHTML = "<h3>나랑 잘 맞지않는 과일은 ?</h3>"
-    let badFruits = new Array();
-    for (let i = 0; i < mbtiInfo[mbti]["badSynergyList"].length; i++) {
-        let badFruitMbti = mbtiInfo[mbti]["badSynergyList"][i];
-        let badFruit = mbtiInfo[badFruitMbti].nickName;
-        badFruits.push(badFruit);
-    }
-    resultBadSynergy.innerHTML += badFruits.join(", ");*/
+    const resultBadSynergy = document.querySelector('.resultBadSynergy')
+    resultBadSynergy.innerHTML = "<h3 class='borderDeco'>나랑 가장 <br class='mo'/><b>안 맞는</b> 과일은?</h3>";
+
+    let badFruitMbti = mbtiInfo[mbti]["badSynergyList"][0];
+    let badFruitImg = 'img/image-' + badFruitMbti + '.png';
+
+    let badFruit = `<div class="imgArea"><img src="${badFruitImg}" alt="${badFruitMbti}"></div>
+                    <div class="name" style="color:${mbtiInfo[badFruitMbti].color};">${mbtiInfo[badFruitMbti].desc}<b>${mbtiInfo[badFruitMbti].nickName}</b></div>`;
+    resultBadSynergy.innerHTML += badFruit;
     // 희귀도
     // const resultRareRate = document.querySelector('.resultRareRate');
     // resultRareRate.innerHTML = mbtiInfo[mbti]["rareRate"];

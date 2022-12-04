@@ -4,7 +4,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,
 address,big,cite,code,del,dfn,em,font,img,ins,
 q,s,samp,small,strike,strong,sub,sup,tt,var,b,
 u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:none 0;border-spacing:0;color:#2D3C48}
-body{font-family:'Esamanru',Arial,Sans-serif;background-color:#fff;font-size:14px;line-height:1;font-weight:400;letter-spacing:0;min-width:240px}
+body{font-family:'Esamanru',Arial,Sans-serif;background-color:#fff;font-size:14px;line-height:1;font-weight:300;letter-spacing:0;min-width:240px}
 header,section,article,nav,aside,footer,address{margin:0;padding:0;border:none 0;border-spacing:0}
 img,fieldset,iframe{border:0}
 ol,ul,li{list-style:none}
@@ -29,7 +29,7 @@ html{font-size:62.5%;-webkit-text-size-adjust:none;}
 @media all and (max-width:1500px){
     html{font-size:43.75%}
 }
-@media all and (max-width:768px){
+@media all and (max-width:812px){
     html{font-size:62.5%}
 }
 @media all and (max-width:680px){
@@ -78,14 +78,14 @@ html{font-size:62.5%;-webkit-text-size-adjust:none;}
     html{font-size:34.375%}
 }
 @media all and (max-width:375px){
-    html{font-size:62.5%}
+     html{font-size:32.8125%}
 }
 @media all and (max-width:360px){
-    html{font-size:59.375%}
+   html{font-size:31.25%}
 }
 @media all and (max-width:340px){
-    html{font-size:59.375%}
+   html{font-size:29.6875%}
 }
 @media all and (max-width:320px){
-    html{font-size:56.25%}
+    html{font-size:26.5625%}
 }

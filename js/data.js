@@ -328,7 +328,7 @@ const mbtiInfo = {
                     "단톡방에서 싸움이 났거나 논란이 되는 이야기를 나누고 있으면, 여러 관점에 납득하면서 중립적인 자세를 취해요.",
                     "혼자 있으면서 에너지를 충전해요. 답장이 늦는 건 미리 보기로 보고 답장하는 걸 깜빡했거나, 알림을 모두 껐기 때문이죠."],
         goodSynergyList : ['ESFJ', 'ENFJ', 'ISFJ', 'INFJ'],
-        badSynergyList : ['ESFJ', 'ENFJ', 'ISFJ', 'INFJ'],
+        badSynergyList : ['ESFP', 'ISFP', 'ESTP', 'INFP'],
         rareRate : 3,
         keyWords : ["중립적",
             "게으른사색가",
