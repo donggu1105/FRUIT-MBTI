@@ -1,6 +1,6 @@
 const qnaList = [
   {
-    q: '1년동안 소식이 없던 단톡방에 <br/>메시지가 하나 올라 왔을 때 나의 반응은? ',
+    q: '1년동안 소식이 없던 단톡방에 메시지가 하나 올라 왔을 때 나의 반응은? ',
     a: [
       { answer: '(뭐지... 이방 죽은 거 아니였어?) 누가 답장할 때 까지 기다린다.', type: ['INFP', 'ISFP', 'INFJ', 'ISFJ'] },
       { answer: '뭐야 오랜만이네 하면서 바로 답장을 보낸다. ', type: ['ENFP', 'ESFP', 'ENTP', 'ESTP'] },
@@ -268,7 +268,7 @@ const mbtiInfo = {
                     "대화의 판은 내가 깔아둘께! 재미있는거나 가고싶은 곳이 생기면 먼저 이야깃거리를 꺼내요. 가끔은 분위기를 띄운 후 사라지기도 합니다",
                     "열정이 넘치지만 항상 그런것만은 아닙니다. 공적인 톡방에서는 대화를 많이 하는편은 아니에요."],
         goodSynergyList : ['ISTJ', 'ESFJ', 'ESTJ'],
-        badSynergyList : ['ISTJ', 'ESFJ', 'ESTJ'],
+        badSynergyList : ['ISTP', 'ESTJ', 'ISFJ', 'ENTJ'],
         rareRate : 4,
         keyWords : ["불타는 열정",
             "감성충만",
