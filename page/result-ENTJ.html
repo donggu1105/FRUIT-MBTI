@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="donggu"/>
+        <meta name="keywords" content="단톡방 과일 테스트"/>
+        <meta name="description" content="단톡방 과일 테스트"/>
+<!--        seo -->
+        <meta name="naver-site-verification" content="f4193483d83ab4709dc7e5eb6f7daa01d6d95b25" />
+
+        <!--        sns share  구글 검색했을때 설명뜨는 부분-->
+        <meta property="og:url" content="https://fruitmbti.com"/>
+        <meta property="og:title" content="단톡방 과일 테스트"/>
+        <meta property="og:type" content="website"/>
+        <!--  fixme-->
+        <meta property="og:image" content="/img/image-ENTJ.png"/>
+        <meta property="og:description" content="나는 어떤 단톡방 과일 유형 일까?"/>
+
+
+<!--        favicon-->
+        <link rel="shortcut icon" href="/img/favicon.ico"/>
+        <link rel="apple-touch-icon-precomposed" href="/img/favicon.ico">
+
+
+        <title>단톡방 과일 테스트</title>
+
+        <!--font-->
+        <link rel="stylesheet" href="/css/font.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+        <!--css-->
+        <link rel="stylesheet" href="/css/default.css"/>
+        <link rel="stylesheet" href="/css/style.css">
+        
+        <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+        <script>
+            Kakao.init('144c1cbf56aff2e6e4f7cb08b8bb8e2d');
+            Kakao.isInitialized();
+
+        </script>
+
+
+    </head>
+
+    <body class="blueBg shareResult">
+
+<!--          header -->
+        <section id="header" class="mx-auto">
+            <header class="mx-auto">
+                <div class="inner">
+                    <h1>
+                        <a href="/">
+                            <img src="/img/main_logo.svg" alt="N년생 로고" class="main_logo"><span>N생</span>
+                            <img src="/img/qna_logo.svg" alt="mbti,N년생로고" class="qna_logo">
+                        </a>
+                    </h1>
+                    <div class="mx-1 my-2 title"><a href="/">단톡방 과일 테스트 결과<span class="page"></span></a></div>
+                    <nav>
+                        <button type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                <rect x="4" y="11" width="16" height="2"/>
+                            </svg>
+                        </button>
+                        <button type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8H8V16H16V8ZM6 6V18H18V6H6Z"/>
+                            </svg>
+                        </button>
+                        <button type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" >
+                                <rect x="7.3335" y="6" width="15.085" height="1.88562" transform="rotate(45 7.3335 6)"/>
+                                <rect x="18" y="7.3335" width="15.085" height="1.88562" transform="rotate(135 18 7.3335)"/>
+                            </svg>
+                        </button>
+                    </nav>
+                </div>
+            </header>
+        </section>
+        <div class="container">
+            <section id="result" class="mx-auto my-5 py-5 px-3" style="display:block">
+                <div class="inner">
+                    <div class="borderDeco resultDesc " style="color:#EC6C70;">
+                        <!-- fixme -->
+                        야심 차게 타고 갈        <b>배</b>
+                    </div>
+                    <div class="resultArea">
+                        <!--  fixme-->
+                        <div id="resultImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+                            <img src="/img/image-ENTJ.png" alt="ENTJ" class="img-fluid">
+                        </div>
+                        <!--  fixme-->
+                        <div class="mt-5 resultContent">
+                            <ul>
+                                <li>카톡 숫자가 쌓이는 게 싫어서 웬만한 단톡방은 빨리 확인하죠. 답장은 보자마자 하려고 해요.</li>
+                                <li>정확하지 않은 정보를 단톡방에 가져오면 팩트 체크를 확실하게 해서 짚어줘요. </li>
+                                <li>약속을 잡을 때 시간표로 일정을 공유하고 카톡 공지를 나서서 하죠.</li>
+                                <li>제대로 일을 안 하면 열 받아요. 총대를 매더라도 절대 대신해주지 않고 조별 단독방을 통솔해요.</li>
+                                <li>센스를 겸비해서 스몰토크도 잘하고 관계가 넓어요. 이모티콘도 사람에 따라 적절하게 사용하죠.</li>
+                                <li>차갑지만 전략을 제시하는 조언가!  단톡방에서 감정적인 공감 보다는 직설적으로 조언해주고  타인의 성장을 도모해요. </li>
+                                <li>힘들거나 번아웃이 와도 자신의 감정을 알아채기 어려워서 혼자 고민해요. 단톡방에서 술을 마시고 싶다고 하면 말없이 같이 만나 즐겨주세요. </li>
+                                <li>일 관련 제외 톡 방은 알림을 꺼두는 걸 선호해요. 혹시 답장이 늦는다면 일을 하고 있거나 어떻게 답을 해야 할지 애매할 뿐이에요.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="synergyArea">
+                        <div class="mt-5 resultGoodSynergy">
+                            <h3 class="borderDeco">나랑 가장 <br class="mo"><b>잘 맞는</b> 과일은?</h3>
+                            <!--   fixme-->
+                            <div class="imgArea"><img src="/img/image-ISFP.png" alt="ISFP"></div>
+                            <div class="name" style="color:#CB8D36;">톡이 많이와서 정신이 알딸딸  <b>딸기</b></div>
+                        </div>
+                        <div class="mt-5 resultBadSynergy">
+                            <h3 class="borderDeco">나랑 가장 <br class="mo"><b>잘 맞는</b> 과일은?</h3>
+                            <!--   fixme -->
+                            <div class="imgArea"><img src="/img/image-ISFJ.png" alt="ISFJ"></div>
+                            <div class="name" style="color:#CB8D36;"> 단톡방? 아니 그냥 내방에서 까먹자 <b>귤</b></div>
+                        </div>
+                    </div>
+                    <div class="btnArea">
+                        <button type="button" class="backBtn" onclick="js:setBack();"><img src="/img/backBtn_icon.svg" alt="처음으로">나도 참여하기</button>
+                        <button type="button" class="allResultBtn" onclick="js:setAllResult();">모든 결과표 보기</button>
+                    </div>
+                </div>
+            </section>
+<!--        모든 결과 보기-->
+            <section id="allResult">
+                <div class="inner">
+                </div>
+                <button type="button" class="returnBtn" onclick="js:returnResult();">결과로 돌아가기</button>
+            </section>
+            
+            <section id="kakao_ad">
+                <ins class="kakao_ad_area" style="display:none;"
+                     data-ad-unit = "DAN-RxNvTZ3kJhY71yf3"
+                     data-ad-width = "320"
+                     data-ad-height = "100"></ins>
+                <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+            </section>
+
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7335328985873872"
+                    crossorigin="anonymous"></script>
+            <script src="/js/data.js" charset="utf-8"></script>
+            <script src="/js/start.js" charset="utf-8"></script>
+        </div>
+    </body>
+</html>
