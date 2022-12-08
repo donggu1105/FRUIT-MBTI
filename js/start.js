@@ -164,8 +164,8 @@ function calResult() {
             mbti = keys[i];
         }
     }
-    console.log(select)
-    console.log(mbti)
+    // console.log(select)
+    // console.log(mbti)
     return mbti;
 
 }
@@ -282,4 +282,9 @@ function goTop(){
 // 테스트 다시 하기
 function setBack() {
     location.reload();
+}
+
+function goIndex() {
+    location.href = "https://fruitmbti.com"
+
 }
