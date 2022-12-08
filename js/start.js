@@ -267,7 +267,7 @@ function returnResult(){
     result.style.display = "block";
     allResult.style.display = "none";
     kakao_ad.style.display = "block";
-    document.querySelector("#header .title a").innerHTML = "단톡방 과일 TEST 결과";
+    document.querySelector("#header .title a").innerHTML = "단톡방 과일 테스트 결과";
 }
 
 // 스크롤바 상단으로 리셋

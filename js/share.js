@@ -1,5 +1,5 @@
 const url = "https://fruitmbti.com/";
-const shareTitle = "단톡방 과일 TEST";
+const shareTitle = "단톡방 과일 테스트";
 
 // 공유하기 주소 
 function shareUrl() {
