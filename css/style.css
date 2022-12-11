@@ -13,7 +13,8 @@ body{background: #FFFB97;height:100%;max-height:100vh;width:100%;overflow:hidden
 
 /* header */
 header{width:100%;background-color: inherit; border-bottom: 0.13rem solid #EFEB7B;}
-header .inner{display: flex;justify-content:space-between;align-items:center;height:8rem;padding:0}
+header .inner{position:relative;display: flex;justify-content:space-between;align-items:center;height:8rem;padding:0}
+header .title{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);}
 h1 .main_logo{width:3.6rem;}
 h1 .qna_logo{display:none;width:4rem;}
 header span{display:inline-block;font-weight:300;font-size:1.6rem;color:#EFEB7B;padding-left:0.8rem;vertical-align:middle;}
@@ -52,14 +53,14 @@ header .title{display: inline-block;font-weight:500;font-size:1.8rem}
 .status{background:#fff;height:0.6rem}
 .status .statusBar{background:#7EA2FF;height:100%;border-radius: 0 0.4rem 0.4rem 0;transition: width .5s; -webkit-transition: width .5s}
 .qBox{position:relative;margin-top:4rem;padding-left:9rem;margin-bottom:4rem}
-.qBox .box{position:relative;background:#fff;border-radius:2rem;padding:2.4rem 3.2rem;font-size:2.4rem;line-height:3.6rem;font-weight:300;word-break:keep-all;}
+.qBox .box{position:relative;background:#fff;border-radius:2rem;padding:2.4rem 3.2rem;font-size:1.5rem;line-height:3rem;font-weight:300;word-break:keep-all;}
 .qBox .box::after{content:"";display:inline-block;width:1.5rem;height:2.3rem;background: url('/img/q_bubble.svg') no-repeat left top;background-size:3.1rem;position:absolute;left:-1.5rem;top:2rem;}
-.qBox .name{font-size:2.2rem;font-weight:300;display:inline-block;margin-bottom:1.6rem;}
+.qBox .name{font-size:1.5rem;font-weight:300;display:inline-block;margin-bottom:1.6rem;}
 .qBox .qLogo{position:absolute;left:0;top:0;width:5.2rem}
 .answerBox{padding-right:2.4rem;padding-left:9rem;}
-.answerBox .answerList{position:relative;display:block;width:100%;background:#FFF6A5;border-radius:2rem;padding:2.4rem 3.2rem;text-align:left;font-size:2.4rem;line-height: 3.6rem;font-weight:300;margin-bottom:2.4rem;word-break:keep-all;}
+.answerBox .answerList{position:relative;display:block;width:100%;background:#FFF6A5;border-radius:2rem;padding:2.4rem 3.2rem;text-align:left;font-size:1.5rem;line-height: 3rem;font-weight:300;margin-bottom:2.4rem;word-break:keep-all;}
 .answerBox .answerList:last-of-type{margin-bottom:0;}
-.answerBox .answerList:first-of-type::after{content:'';display:inline-block;width:1.5rem;height:2.3rem;position:absolute;right:-1.5rem;top:1rem;background:url('/img/a_bubble.svg') no-repeat top right;background-size:3.1rem}
+.answerBox .answerList:first-of-type::after{content:'';display:inline-block;width:1.5rem;height:2.3rem;position:absolute;right:-1.4rem;top:1rem;background:url('/img/a_bubble.svg') no-repeat top right;background-size:3.1rem}
 .answerBox .answerList:hover{background-color:#FFEB33}
 .answerBox .answerList:first-of-type:hover::after{background-image:url('/img/a_bubble_hover.svg');}
 
@@ -109,10 +110,10 @@ header .title{display: inline-block;font-weight:500;font-size:1.8rem}
 .roding h3{width:100vw;padding-top:1.6rem;font-size:1.8rem;font-weight:500;color:#6D4D45}
 
 @media all and ( max-width:1024px ){
-    .inner{padding:0 2.4rem;max-width:72rem;}
+    .inner{padding:0 2.4rem;max-width:initial;}
     
     /* header */
-    header .inner{height:6.4rem;}
+    header .inner{height:6.4rem;padding:0 2.4rem;}
     header span{padding-left:0.8rem}
 
     /* main */
@@ -124,11 +125,11 @@ header .title{display: inline-block;font-weight:500;font-size:1.8rem}
     /* qna */
     .status{height:0.4rem}
     .status .statusBar{border-radius: 0 0.5rem 0.5rem 0}
-    .qBox .box{font-size:2.2rem}
-    .qBox .name{font-size:1.8rem}
+    .qBox .box{font-size:1.4rem}
+    .qBox .name{font-size:1.4rem}
     .qBox .qLogo{width:4.8rem}
     .answerBox{padding-right:2.4rem;padding-left:0;}
-    .answerBox .answerList{font-size:2.2rem}
+    .answerBox .answerList{font-size:1.4rem}
 
     /* result */
     #result{padding: 2.4rem 2.4rem}
@@ -158,13 +159,13 @@ header .title{display: inline-block;font-weight:500;font-size:1.8rem}
 
 @media all and (max-width:768px){
     /* common */
-    .inner{padding:0 1.8rem;max-width:35.1rem;}
+    .inner{padding:0 1.8rem}
     .pc{display:none;}
     .mo{display:inline;}
 
     /* header */
-    header{border-bottom-width: 0.1rem}
-    header .inner{height:4.8rem;}
+    header{border-bottom-width: 0.1rem;}
+    header .inner{height:4.8rem;padding:0 1.8rem}
     h1 .main_logo{width:2.4rem;}
     h1 .qna_logo{width:2.4rem;}
     header span{font-size:1rem;padding-left:0.4rem}

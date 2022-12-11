@@ -18,9 +18,8 @@ a:hover{text-decoration:none}
 legend,caption{display:none}
 input:focus,button:focus{outline:none}
 img{max-width:100%;}
-button{font-family:'Esamanru',Arial,Sans-serif;}
+button{color:#2D3C48;font-family:'Esamanru',Arial,Sans-serif;-webkit-tap-highlight-color :transparent;appearance: none;-moz-appearance: none;-webkit-appearance: none;border-radius: 0;-webkit-border-radius: 0;-moz-border-radius: 0;}
 *{box-sizing:border-box}
-
 /*Font 1rem=10px*/
 html{font-size:62.5%;-webkit-text-size-adjust:none;}
 @media all and (max-width:1680px){
