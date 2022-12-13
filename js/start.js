@@ -43,7 +43,7 @@ function begin() {
 
         }, 450)
         let qIdx = 0;
-
+        kakao_ad.classList.add('topAd');
         goNext(qIdx);
 
     }, 450);
@@ -177,6 +177,7 @@ function setResult() {
     var resultImg = document.createElement('img');
     const imgDiv = document.querySelector('#resultImg');
     var imgURL = 'img/image-' + mbti + '.png';
+    kakao_ad.classList.remove('topAd');
     resultImg.src = imgURL;
     resultImg.alt = mbti;
     resultImg.classList.add('img-fluid');

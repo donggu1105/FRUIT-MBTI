@@ -23,10 +23,10 @@ button{color:#2D3C48;font-family:'Esamanru',Arial,Sans-serif;-webkit-tap-highlig
 /*Font 1rem=10px*/
 html{font-size:62.5%;-webkit-text-size-adjust:none;}
 @media all and (max-width:1680px){
-    html{font-size:45%}
+    html{font-size:59.37%}
 }
 @media all and (max-width:1500px){
-    html{font-size:43.75%}
+    html{font-size:56.25%}
 }
 @media all and (max-width:1024px){
     html{font-size:62.5%}
