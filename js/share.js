@@ -14,7 +14,7 @@ function shareKt() {
     var resultAlt = shareUrl();
     const shareURL = url + "page/result-" + resultAlt + '.html';
     const shareDesc = mbtiInfo[resultAlt].desc + mbtiInfo[resultAlt].nickName;
-    const shareImage = url + "img/image-" + resultAlt + ".png";
+    const shareImage = url + "img/kakao-" + resultAlt + ".png";
     
 
     Kakao.Link.sendDefault({

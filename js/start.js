@@ -40,10 +40,9 @@ function begin() {
             main.style.display = "none"
             qna.style.display = "block";
             body.className += "qnaBody blueBg";
-
+            kakao_ad.classList.add('topAd');
         }, 450)
         let qIdx = 0;
-
         goNext(qIdx);
 
     }, 450);
@@ -177,6 +176,7 @@ function setResult() {
     var resultImg = document.createElement('img');
     const imgDiv = document.querySelector('#resultImg');
     var imgURL = 'img/image-' + mbti + '.png';
+    kakao_ad.classList.remove('topAd');
     resultImg.src = imgURL;
     resultImg.alt = mbti;
     resultImg.classList.add('img-fluid');
@@ -187,12 +187,7 @@ function setResult() {
     const resultDesc = document.querySelector('.resultDesc');
     resultDesc.innerHTML = mbtiInfo[mbti]["desc"]+"<b>"+mbtiInfo[mbti]["nickName"]+"</b>";
     resultDesc.style.color = mbtiInfo[mbti]["color"];
-    // keyWords
-    /*const resultKeyWords = document.querySelector('.resultKeyWords')
-    for (let i = 0; i < mbtiInfo[mbti]["keyWords"].length; i++) {
-        resultKeyWords.innerHTML += "#" + mbtiInfo[mbti]["keyWords"][i] + " ";
-    }
-    // resultKeyWords.innerHTML =  mbtiInfo[mbti]["keyWords"].join(" ");*/
+
     // 콘텐트
     const resultContent = document.querySelector('.resultContent');
     var resultConList = document.createElement('ul');
@@ -205,9 +200,13 @@ function setResult() {
 
     let goodFruitMbti = mbtiInfo[mbti]["goodSynergyList"][0];
     let goodFruitImg = 'img/image-' + goodFruitMbti + '.png';
+    let goodFruitTxt = `${mbtiInfo[goodFruitMbti].desc}${mbtiInfo[goodFruitMbti].nickName}`;
+    
+    let fruitNameClass = "sort";
+    if(goodFruitTxt.length > 15) fruitNameClass = "";
 
     let goodFruit = `<div class="imgArea"><img src="${goodFruitImg}" alt="${goodFruitMbti}"></div>
-                    <div class="name" style="color:${mbtiInfo[goodFruitMbti].color};">${mbtiInfo[goodFruitMbti].desc}<b>${mbtiInfo[goodFruitMbti].nickName}</b></div>`;
+                    <div class="name ${fruitNameClass}" style="color:${mbtiInfo[goodFruitMbti].color};">${mbtiInfo[goodFruitMbti].desc}<b>${mbtiInfo[goodFruitMbti].nickName}</b></div>`;
     resultGoodSynergy.innerHTML  += goodFruit;
 
     // badSynergyList
@@ -216,14 +215,14 @@ function setResult() {
 
     let badFruitMbti = mbtiInfo[mbti]["badSynergyList"][0];
     let badFruitImg = 'img/image-' + badFruitMbti + '.png';
+    
+    let badFruitTxt = `${mbtiInfo[badFruitMbti].desc}${mbtiInfo[badFruitMbti].nickName}`;
+    if(badFruitTxt.length > 15) fruitNameClass = "";
+    else fruitNameClass = "sort";
 
     let badFruit = `<div class="imgArea"><img src="${badFruitImg}" alt="${badFruitMbti}"></div>
-                    <div class="name" style="color:${mbtiInfo[badFruitMbti].color};">${mbtiInfo[badFruitMbti].desc}<b>${mbtiInfo[badFruitMbti].nickName}</b></div>`;
+                    <div class="name ${fruitNameClass}" style="color:${mbtiInfo[badFruitMbti].color};">${mbtiInfo[badFruitMbti].desc}<b>${mbtiInfo[badFruitMbti].nickName}</b></div>`;
     resultBadSynergy.innerHTML += badFruit;
-    // 희귀도
-    // const resultRareRate = document.querySelector('.resultRareRate');
-    // resultRareRate.innerHTML = mbtiInfo[mbti]["rareRate"];
-    // goodSynergyList
 
 }
 // 모든 결과표 보기
