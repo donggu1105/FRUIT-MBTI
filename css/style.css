@@ -217,7 +217,8 @@ header .title{display: inline-block;font-weight:500;font-size:1.8rem}
     .synergyArea h3::after{border-radius: 0 0 3rem 3rem;}
     .synergyArea .imgArea{width:10rem;margin:0 auto 0.8rem;}
     .synergyArea .name{font-size:1.2rem;line-height:2.4rem;}
-    .synergyArea .name b{font-size:1.6rem;display:block;}
+    .synergyArea .name b{font-size:1.6rem;}
+    .synergyArea .sort b{display:block;}
     #result .btnArea{max-width:initial;width:100%;margin:0 auto 4.8rem;}
     .backBtn{height:4rem;font-size:1.3rem}
     .backBtn img{width:2.4rem;}
