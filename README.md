@@ -1,7 +1,7 @@
 <h1 style="text-align: center;"> 간단한 질문을 통해 단톡방에서 나의 정체를 알아보자 ! </h1>
 
 ```
-https://fruitmbti.com
+https://fruitmbti.pages.dev
 ```
 
 <h1 style="text-align: center"> Main Page </h1>
